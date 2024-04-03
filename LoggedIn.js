@@ -31,4 +31,5 @@ function FullscreenImage() {
     setTimeout(() => {
         image.style.display = 'none';
     }, 1500);
+
 }
