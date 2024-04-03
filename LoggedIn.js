@@ -30,6 +30,6 @@ function FullscreenImage() {
     image.style.display = image.style.display === 'none' ? 'block' : 'none';
     setTimeout(() => {
         image.style.display = 'none';
-    }, 1500);
+    }, 3000);
 
 }
