@@ -25,3 +25,11 @@ function CheckPassword() {
 function goBack() {
     window.history.back();
 }
+function FullscreenImage() {
+    const image = document.getElementById("Logo");
+    image.style.display = image.style.display === 'none' ? 'block' : 'none';
+    setTimeout(() => {
+        image.style.display = 'none';
+    }, 1500);
+
+}
