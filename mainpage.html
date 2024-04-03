@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <script src="LoggedIn.js"></script>
     <title>Autozone</title>
     <!--header style-->
     <style>
@@ -21,7 +22,7 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">my profile</a></li>
+                <li><a href="Account/Profile.html" onclick="return CheckLogin()">Profile</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -32,7 +33,7 @@
     </main>
     <div>
         <a href="#">
-            <img src="car-logo-png-2297.png"  style="width: 200px; height: 200px;">
+            <img src="car-logo-png-2297.png" style="width: 200px; height: 200px;">
         </a>
         <a href="#">
             <img src="car-logo-png-2296.png" style="width: 200px; height: 200px;">
@@ -45,7 +46,7 @@
         </a>
 
     </div>
-    
+
     <!--footer-->
     <footer style="background-color: #ff0000;">
         <hr>
