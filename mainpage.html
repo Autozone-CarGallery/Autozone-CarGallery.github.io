@@ -1,58 +1,108 @@
 <!DOCTYPE html>
-<html>
 
 <head>
-    <script src="LoggedIn.js"></script>
-    <title>Autozone</title>
-    <!--header style-->
-    <style>
-        header {
-            background-color: #000000;
-            background-image: url(main_Photos/IMG-20240402-WA0041.jpg);
-            padding: 20px;
-            background-position: left top;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is Our Car Store" />
+  <title>Auto Zone Car Gallery</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="LoggedIn.js"></script>
 </head>
 
 <body>
-    <!--Header-->
-    <header>
-        <h1>Auto Zone</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="Account/Profile.html" onclick="return CheckLogin()">Profile</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h4>car brands</h4>
-    </main>
-    <div>
+  <header>
+    <a href="mainpage.html">
+      <img src="main_Photos/LOGO.png" alt="Logo" id="logo" style="width: 300px; height: 150px;">
+    </a>
+  </header>
+  <nav>
+    <a href="mainpage.html">Home</a>
+    <a href="Account/Profile.html" onclick="return CheckLogin()">Profile</a>
+    <a href="#">Services</a>
+    <a href="mailto:mohamed.hmg16@gmail.com">Email Us</a>
+  </nav>
+  <div class="container">
+    <div class="brand-list">
+      <div class="brand-item">
         <a href="#">
-            <img src="main_Photos/car-logo-png-2297.png" style="width: 200px; height: 200px;">
+          <img src="Cars/Alfa Romeo/5ec3e4d258550c000442774e.png" alt="Alfa Romeo">
         </a>
+        <p>Alfa Romeo</p>
+      </div>
+      <div class="brand-item">
         <a href="#">
-            <img src="main_Photos/car-logo-png-2296.png" style="width: 200px; height: 200px;">
+          <img src="Cars/Audi/5ec3e46558550c000442774b.png" alt="Audi">
         </a>
+        <p>Audi</p>
+      </div>
+      <div class="brand-item">
         <a href="#">
-            <img src="main_Photos/car-logo-png-2310.png" style="width: 200px; height: 200px;">
+          <img src="Cars/BMW/62066b3bd7b91b0004122601.png" alt="BMW">
         </a>
+        <p>BMW</p>
+      </div>
+      <div class="brand-item">
         <a href="#">
-            <img src="main_Photos/5ec3e46558550c000442774b.png" style="width: 200px; height: 200px;">
+          <img src="Cars/Ford/car-logo-png-2310.png" alt="Ford">
         </a>
-
+        <p>Ford</p>
+      </div>
+      <div class="brand-item">
+        <a href="#">
+          <img src="Cars/Mercedes/car-logo-png-2296.png" alt="Mercedes">
+        </a>
+        <p>Mercedes</p>
+      </div>
+      <div class="brand-item">
+        <a href="#">
+          <img src="Cars/KIA/1024px-Kia-logo.png" alt="KIA">
+        </a>
+        <p>KIA</p>
+      </div>
+      <div class="brand-item">
+        <a href="#">
+          <img src="Cars/Nissan/nissan-2020-new-logo.jpg" alt="Nissan">
+        </a>
+        <p>Nissan</p>
+      </div>
+      <div class="brand-item">
+        <a href="#">
+          <img
+            src="Cars/Dodge/png-transparent-dodge-logo-dodge-ram-trucks-ram-pickup-car-logo-dodge-love-text-heart-thumbnail-removebg-preview.png"
+            alt="Dodge">
+        </a>
+        <p>Dodge</p>
+      </div>
+      <div class="brand-item">
+        <a href="#">
+          <img src="Cars/VW/volkswagen-new-20213320.jpg" alt="VolksWagen">
+        </a>
+        <p>VolksWagen</p>
+      </div>
+      <div class="brand-item">
+        <a href="#">
+          <img src="Cars/Lamborgini/913_lamborghini.jpg" alt="Lamborgini">
+        </a>
+        <p>Lamborgini</p>
+      </div>
+      <div class="brand-item">
+        <a href="#">
+          <img src="Cars/Toyota/toyota-logo-photo-12.png" alt="Toyota">
+        </a>
+        <p>Toyota</p>
+      </div>
+      <div class="brand-item">
+        <a href="#">
+          <img src="Cars/Volvo/volvo-car-logo-png-brand-image-20.png" alt="Volvo">
+        </a>
+        <p>Volvo</p>
+      </div>
+      <!-- Add more brand items as needed -->
     </div>
-
-    <!--footer-->
-    <footer style="background-color: #ff0000;">
-        <hr>
-        author : Car Zone team <br>
-        &copy; copyright reserved by carzone team
-    </footer>
+  </div>
+  <footer style="background-color: #333; color: #fff; text-align: center; padding: 10px;">
+    &copy; 2024 Car Zone Team. All rights reserved.
+  </footer>
 </body>
 
 </html>
