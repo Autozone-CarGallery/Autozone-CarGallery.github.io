@@ -76,3 +76,11 @@ span.RPEmail,
     text-align: center;
     display: block;
 }
+
+.Welcome {
+
+    font-size: 60px;
+    color: #000000;
+    font-weight: 800;
+    text-transform: capitalize;
+}
