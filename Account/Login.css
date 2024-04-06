@@ -8,7 +8,7 @@
     z-index: 100;
 }
 
-form {
+form.search {
     border: 3px solid #f1f1f1;
 }
 
@@ -19,9 +19,24 @@ input[type=email] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
+    border-radius: 3px;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    text-transform: capitalize;
+    background-color: #e1e1e1;
+    transition: .5s;
+}
+
+
+input:focus {
+    background: #fff;
+    color: #000000;
+
+}
+
+input:hover {
+    background: #fff;
 }
 
 button {
@@ -32,6 +47,7 @@ button {
     border: none;
     cursor: pointer;
     width: 100%;
+    border-radius: 3px;
 }
 
 button:hover {
@@ -58,16 +74,18 @@ span.password {
     padding-top: 16px;
 }
 
-span.Login-Register {
+span.LoginRegister {
     float: right;
     padding-top: 3pt;
-
+    text-decoration: none;
+    padding-right: 3px;
 }
 
 button.MainPageReturn {
     width: auto;
     padding: 10px 18px;
     background-color: #008000;
+
 
 }
 
@@ -83,4 +101,24 @@ span.RPEmail,
     color: #000000;
     font-weight: 800;
     text-transform: capitalize;
+}
+
+.AlertBox {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 150px;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    text-transform: capitalize;
+    background: tomato;
+    border-top: 10px solid #eb2628;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+    text-align: center;
+    transition: 1s;
 }

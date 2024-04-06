@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This Registering page" />
+    <meta name="description" content="This is Registering page" />
     <link rel="stylesheet" type="text/css" href="../main.css">
     <link rel="stylesheet" href="Login.css">
     <script src="../LoggedIn.js"></script>
@@ -14,14 +14,24 @@
 </head>
 
 <body onload="FullscreenImage()">
+    <div class="AlertBox">
+        <p class="Alert">mee</p>
+
+    </div>
     <header>
-        <a href="mainpage.html">
+        <a href="../mainpage.html">
             <img src="../main_Photos/LOGO.png" alt="Logo" id="logo" style="width: 300px; height: 150px;">
         </a>
     </header>
     <nav>
+        <form>
+            <div class="search">
+                <span class="material-symbols-outlined">search</span>
+                <input type="search" class="search-input" placeholder="search...">
+            </div>
+        </form>
         <a href="../mainpage.html">Home</a>
-        <a href="Profile.html" onclick="return CheckLogin()">Profile</a>
+        <a href="Account/Profile.html" onclick="return CheckLogin()">Profile</a>
         <a href="#">Services</a>
         <a href="mailto:mohamed.hmg16@gmail.com">Email Us</a>
     </nav>
@@ -40,12 +50,13 @@
             <label for="PasswordConfirm"><b>Re-Enter Password</b></label>
             <input type="password" placeholder="Re-Enter Password" id="PasswordConfirm" name="PasswordConfirm" required>
             <div id="ErrorMessage" class="Errormessage"></div>
+            <button type="submit">Register</button>
         </div>
-        <button type="submit">Register</button>
+
         <label>
             <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
-        <span class="Login-Register">Have an account? <a href="Login.html">Sign in</a></span>
+        <span class="LoginRegister">Have an account? <a href="Login.html">Sign in</a></span>
 
         </div>
 

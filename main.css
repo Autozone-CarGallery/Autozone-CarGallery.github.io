@@ -11,19 +11,24 @@ header {
   padding: 10px 20px;
   text-align: center;
 }
+
 nav {
   background-color: #444;
   padding: 10px 0;
   text-align: center;
 }
+
 nav a {
   color: #fff;
   text-decoration: none;
   margin: 0 10px;
 }
+
 nav a:hover {
-  color: #ff0000; /* Change color on hover */
+  color: #ff0000;
+  /* Change color on hover */
 }
+
 .container {
   max-width: 800px;
   margin: 20px auto;
@@ -32,38 +37,67 @@ nav a:hover {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .brand-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
+
 .brand-item {
   margin: 20px;
   text-align: center;
 }
+
 .brand-item img {
   width: 150px;
   height: auto;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
+
 .brand-item img:hover {
   transform: scale(1.1);
 }
-.search{
+
+.search {
   width: max-content;
   display: flex;
-  align-items:center;
+  align-items: center;
   padding: 14px;
   border-radius: 28px;
   background: #f6f6f6;
 }
-.search-input{
+
+.search-input {
   font-size: 16px;
-  font-family: 'lexend',sans-serif;
+  font-family: 'lexend', sans-serif;
   margin-left: 14px;
   outline: none;
-  border:none;
+  border: none;
   background: transparent;
+}
+
+@font-face {
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  font-weight: 400;
+  src: url(123.woff2) format('woff2');
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
 }
