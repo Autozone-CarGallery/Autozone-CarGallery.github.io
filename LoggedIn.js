@@ -14,12 +14,11 @@ function CheckPassword() {
     const password = passwordInput.value;
     const confirmPassword = confirmPasswordInput.value;
     const errorMessage = document.getElementById("ErrorMessage");
-    errorMessage.textContent = "";
 
     if (password !== confirmPassword) {
-        errorMessage.textContent = "Passwords do not match! Please Re-enter your password.";
+        errorMessage.style.display = "block";
         return false;
-    } console.log("Passwords match! Form can be submitted.");
+    }
     return true;
 }
 function goBack() {
@@ -33,3 +32,24 @@ function FullscreenImage() {
     }, 3000);
 
 }
+function Show(x) {
+    var words = document.getElementsByClassName("ProfileContainer");
+    for (var i = 0; i < words.length; i++) {
+        if (words[i].id === x) {
+            words[i].style.display = "inline-block";
+        } else {
+            words[i].style.display = "none";
+        }
+    }
+}
+function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+}
+
+function Info() {
+    const username = getQueryParam('username');
+    const welcomeHeader = document.querySelector('.Welcome');
+    welcomeHeader.textContent = "Welcome, " + username;
+}
+window.onload = Info;
