@@ -14,8 +14,8 @@
 </head>
 
 <body onload="FullscreenImage()">
-    <div class="AlertBox">
-        <p class="Alert">mee</p>
+    <div class="AlertBox" id="ErrorMessage">
+        <p class="Alert">Passwords do not match!<br>Please Re-enter your password.</p>
 
     </div>
     <header>
@@ -49,7 +49,7 @@
             <input type="password" placeholder="Enter Password" name="password" id="password" required>
             <label for="PasswordConfirm"><b>Re-Enter Password</b></label>
             <input type="password" placeholder="Re-Enter Password" id="PasswordConfirm" name="PasswordConfirm" required>
-            <div id="ErrorMessage" class="Errormessage"></div>
+
             <button type="submit">Register</button>
         </div>
 

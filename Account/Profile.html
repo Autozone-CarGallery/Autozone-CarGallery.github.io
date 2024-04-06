@@ -30,11 +30,43 @@
         <a href="mailto:mohamed.hmg16@gmail.com">Email Us</a>
     </nav>
     <div class="ProfileName">
-        <h1 class="Welcome">Welcome, momo</h1>
-
+        <table class="Profile">
+            <tr>
+                <th>
+                    <h1 class="Welcome"></h1>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <button class=" Table" onclick="Show('info')">Info</button>
+            </tr>
+            <th>
+                <button class="Table" onclick="Show('#')">#</button>
+                </tr>
+            <th>
+                <button class="Table" onclick="Show('Settings')">Settings</button>
+                </tr>
+            <th>
+                <a href="../mainpage.html"><button class="Logout">Logout</button></a>
+                </tr>
+        </table>
+    </div>
+    <div class="ProfileContainer" id="info">
+        <h1>About</h1>
+        <p>Membership: Premium<br>
+            joined 30/2/2025</p>
 
     </div>
+    <div class="ProfileContainer" id="#">
+        <h1>#</h1>
+        <p>###########################################</p>
 
+    </div>
+    <div class="ProfileContainer" id="Settings">
+        <h1>Settings:</h1>
+        <p>:p</p>
+
+    </div>
 
 </body>
 
