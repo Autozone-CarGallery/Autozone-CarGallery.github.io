@@ -42,14 +42,29 @@ function Show(x) {
         }
     }
 }
-function getQueryParam(param) {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(param);
+function get(x) {
+    const a = new URLSearchParams(window.location.search);
+    return a.get(x);
 }
 
-function Info() {
-    const username = getQueryParam('username');
-    const welcomeHeader = document.querySelector('.Welcome');
-    welcomeHeader.textContent = "Welcome, " + username;
+function UserInfo() {
+    const username = get('username');
+    const email = get('email');
+
+    const welcome = document.querySelector('.Welcome');
+    const em = document.querySelector('.Email');
+
+    welcome.textContent = "Welcome, " + username;
+
+    if (em !== null && email !== null) {
+        em.textContent = "Email: " + email;
+    }
 }
-window.onload = Info;
+window.onload = UserInfo;
+function ShowPass() {
+    const password = get('password');
+    const pass = document.querySelector('.Pass');
+    pass.textContent = "Password: " + password;
+
+
+}
