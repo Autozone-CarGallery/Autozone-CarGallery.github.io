@@ -7,99 +7,129 @@
   <title>Auto Zone Car Gallery</title>
   <link rel="stylesheet" type="text/css" href="main.css">
   <script src="LoggedIn.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-  <header>
-    <a href="mainpage.html">
-      <img src="main_Photos/LOGO.png" alt="Logo" id="logo" style="width: 300px; height: 150px;">
-    </a>
-  </header>
   <nav>
-    <a href="mainpage.html">Home</a>
-    <a href="Account/Profile.html" onclick="return CheckLogin()">Profile</a>
-    <a href="#">Services</a>
-    <a href="mailto:mohamed.hmg16@gmail.com">Email Us</a>
+    <a href="mainpage.html"><i class="bx bxs-home"></i>Home</a>
+    <a href="Account/Profile.html" onclick="return CheckLogin()"><i class='bx bxs-user'></i>Profile</a>
+    <a href="#service"><i class="bx bx-cog"></i>Services</a>
+    <a href="mailto:mohamed.hmg16@gmail.com"><i class=" bx bxs-envelope"></i>Email Us</a>
+    <a href="#"><button class="addbutton"><i class="bx bx-cart-add"></i>My Cart</button></a>
   </nav>
-  <div class="container">
-    <div class="brand-list">
-      <div class="brand-item">
-        <a href="#">
-          <img src="Cars/Alfa Romeo/5ec3e4d258550c000442774e.png" alt="Alfa Romeo">
-        </a>
-        <p>Alfa Romeo</p>
+    <header>
+      <div class="container header-container">
+        <div class="header-left">
+            <h1>A car we drive says alot about us.</h1>
+            <p>
+              Are you ready to embark on a journey of freedom, convenience, and exhilaration?
+              Imagine yourself cruising down the open road, wind in your hair, and the world at your fingertips.
+              Owning a car isn't just about transportation,it's about unlocking a world of possibilities.
+            </p>
+            <a href="#"><button class="shop-button">Shop Now</button></a>
+        </div>    
       </div>
-      <div class="brand-item">
-        <a href="#">
-          <img src="Cars/Audi/5ec3e46558550c000442774b.png" alt="Audi">
-        </a>
-        <p>Audi</p>
-      </div>
-      <div class="brand-item">
-        <a href="#">
-          <img src="Cars/BMW/62066b3bd7b91b0004122601.png" alt="BMW">
-        </a>
-        <p>BMW</p>
-      </div>
-      <div class="brand-item">
-        <a href="#">
-          <img src="Cars/Ford/car-logo-png-2310.png" alt="Ford">
-        </a>
-        <p>Ford</p>
-      </div>
-      <div class="brand-item">
-        <a href="#">
-          <img src="Cars/Mercedes/car-logo-png-2296.png" alt="Mercedes">
-        </a>
-        <p>Mercedes</p>
-      </div>
-      <div class="brand-item">
-        <a href="#">
-          <img src="Cars/KIA/1024px-Kia-logo.png" alt="KIA">
-        </a>
-        <p>KIA</p>
-      </div>
-      <div class="brand-item">
-        <a href="#">
-          <img src="Cars/Nissan/nissan-2020-new-logo.jpg" alt="Nissan">
-        </a>
-        <p>Nissan</p>
-      </div>
-      <div class="brand-item">
-        <a href="#">
-          <img
-            src="Cars/Dodge/png-transparent-dodge-logo-dodge-ram-trucks-ram-pickup-car-logo-dodge-love-text-heart-thumbnail-removebg-preview.png"
-            alt="Dodge">
-        </a>
-        <p>Dodge</p>
-      </div>
-      <div class="brand-item">
-        <a href="#">
-          <img src="Cars/VW/volkswagen-new-20213320.jpg" alt="VolksWagen">
-        </a>
-        <p>VolksWagen</p>
-      </div>
-      <div class="brand-item">
-        <a href="#">
-          <img src="Cars/Lamborgini/913_lamborghini.jpg" alt="Lamborgini">
-        </a>
-        <p>Lamborgini</p>
-      </div>
-      <div class="brand-item">
-        <a href="#">
-          <img src="Cars/Toyota/toyota-logo-photo-12.png" alt="Toyota">
-        </a>
-        <p>Toyota</p>
-      </div>
-      <div class="brand-item">
-        <a href="#">
-          <img src="Cars/Volvo/volvo-car-logo-png-brand-image-20.png" alt="Volvo">
-        </a>
-        <p>Volvo</p>
-      </div>
-      <!-- Add more brand items as needed -->
-    </div>
-  </div>
+      <section class="service" id="service">
+        <div class="section__container service__container">
+          <p class="section__subheader">WHY CHOOSE US</p>
+          <h2 class="section__header">Great Car Service</h2>
+          <p class="section__description">
+            Trust us to keep your automobile running smoothly and reliably.
+          </p>
+          <div class="service__grid">
+            <div class="service__card">
+              <img src="assests/service-1.jpg" alt="service" />
+              <h4>Aligned Wheel</h4>
+              <p>
+                Experience smoother rides and extended tire life with our wheel
+                alignment service.
+              </p>
+            </div>
+            <div class="service__card">
+              <img src="assests/service-2.jpg" alt="service" />
+              <h4>Electrical system</h4>
+              <p>
+                Elevate car's electrical system to peak performance with our
+                specialized expertise.
+              </p>
+            </div>
+            <div class="service__card">
+              <img src="assests/service-3.jpg" alt="service" />
+              <h4>System Service</h4>
+              <p>
+                We utilize cutting-edge diagnostics and techniques to ensure
+                optimal condition.
+              </p>
+            </div>
+            <div class="service__card">
+              <img src="assests/service-4.jpg" alt="service" />
+              <h4>Engine Diagnostics</h4>
+              <p>
+                Unlock the secrets of your car's performance with state-of-the-art
+                diagnostic services.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="customisation">
+        <div class="section__container customisation__container">
+          <p class="section__subheader">OUR CUSTOMISATION</p>
+          <h2 class="section__header">
+            Car Serving Matched with Great Workmanship
+          </h2>
+          <p class="section__description">
+            Our dedicated team of skilled technicians and mechanics takes pride in
+            delivering top-tier servicing for your beloved vehicle.
+          </p>
+  
+      <section class="section__container price__container" id="price">
+        <p class="section__subheader">BEST PACKAGES</p>
+        <h2 class="section__header">Our Pricing Plans</h2>
+        <p class="section__description">
+          We offer a range of affordable and flexible pricing options.
+        </p>
+        <div class="price__grid">
+          <div class="price__card">
+            <h4>SILVER PACKAGE</h4>
+            <h3><sup>$</sup>35</h3>
+            <p>Routine Maintenance</p>
+            <p>Diagnostic Services</p>
+            <p>Wheel Alignment</p>
+            <p>Brake and Suspension</p>
+            <p>Air Conditioning</p>
+            <p>Scheduled Maintenance</p>
+            <button class="btn">Go Basic</button>
+          </div>
+          <div class="price__card">
+            <div class="price__card__ribbon">BESTSELLER</div>
+            <h4>PLATINUM PACKAGE</h4>
+            <h3><sup>$</sup>69</h3>
+            <p>Routine Maintenance</p>
+            <p>Diagnostic Services</p>
+            <p>Engine Tune-Ups</p>
+            <p>Tire Sales and Services</p>
+            <p>Exhaust System Repairs</p>
+            <p>Scheduled Maintenance</p>
+            <button class="btn">Go Premium</button>
+          </div>
+          <div class="price__card">
+            <h4>GOLD PACKAGE</h4>
+            <h3><sup>$</sup>39</h3>
+            <p>Routine Maintenance</p>
+            <p>Diagnostic Services</p>
+            <p>Brake and Suspension</p>
+            <p>Scheduled Maintenance</p>
+            <p>Wheel Alignment</p>
+            <p>Air Conditioning</p>
+            <button class="btn">Go Standard</button>
+          </div>
+        </div>
+      </section>
+  
+   </header>
   <footer style="background-color: #333; color: #fff; text-align: center; padding: 10px;">
     &copy; 2024 Car Zone Team. All rights reserved.
   </footer>
