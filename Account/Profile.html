@@ -2,15 +2,75 @@
 <html>
 
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is Profile page" />
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <link rel="stylesheet" href="Login.css">
+    <script src="../LoggedIn.js"></script>
     <title>Profile</title>
 </head>
 
 <body>
+    <header>
+        <a href="../mainpage.html">
+            <img src="../main_Photos/LOGO.png" alt="Logo" id="logo" style="width: 300px; height: 150px;">
+        </a>
+    </header>
+    <nav>
+        <form>
+            <div class="search">
+                <span class="material-symbols-outlined">search</span>
+                <input type="search" class="search-input" placeholder="search...">
+            </div>
+        </form>
+        <a href="../mainpage.html">Home</a>
+        <a href="Profile.html">Profile</a>
+        <a href="#">Services</a>
+        <a href="mailto:mohamed.hmg16@gmail.com">Email Us</a>
+    </nav>
+    <div class="ProfileName">
+        <table class="Profile">
+            <tr>
+                <th>
+                    <h1 class="Welcome"></h1>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <button class=" Table" onclick="Show('info')">Info</button>
+            </tr>
+            <th>
+                <button class="Table" onclick="Show('#')">#</button>
+                </tr>
+            <th>
+                <button class="Table" onclick="Show('Settings')">Settings</button>
+                </tr>
+            <th>
+                <a href="../mainpage.html"><button class="Logout">Logout</button></a>
+                </tr>
+        </table>
+    </div>
+    <div class="ProfileContainer" id="info">
+        <h1>About</h1>
+        <p>Membership: Premium<br>
+            joined 30/2/2025</p>
 
+    </div>
+    <div class="ProfileContainer" id="#">
+        <h1>#</h1>
+        <p>###########################################</p>
 
+    </div>
+    <div class="ProfileContainer" id="Settings">
+        <h1>Settings:</h1>
+        <p class="Email" style="display: inline-block;"></p>
+        <br>
+        <p class="Pass" style="display: inline-block;">Password: ********</p>
+        <button class="ShowPass" style="width: fit-content;" onclick="ShowPass()">Show password</button>
 
-    <h1>COMING SOON!!</h1>
+    </div>
+
 </body>
 
 

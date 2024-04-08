@@ -2,6 +2,10 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is Login page" />
+    <link rel="stylesheet" type="text/css" href="../main.css">
     <link rel="stylesheet" href="Login.css">
     <script src="../LoggedIn.js"></script>
     <title>Login</title>
@@ -9,27 +13,44 @@
 </head>
 
 <body onload="FullscreenImage()">
+    <header>
+        <a href="../mainpage.html">
+            <img src="../main_Photos/LOGO.png" alt="Logo" id="logo" style="width: 300px; height: 150px;">
+        </a>
+    </header>
+    <nav>
+        <form>
+            <div class="search">
+                <span class="material-symbols-outlined">search</span>
+                <input type="search" class="search-input" placeholder="search...">
+            </div>
+        </form>
+        <a href="../mainpage.html">Home</a>
+        <a href="Account/Profile.html" onclick="return CheckLogin()">Profile</a>
+        <a href="#">Services</a>
+        <a href="mailto:mohamed.hmg16@gmail.com">Email Us</a>
+    </nav>
 
     <img id="Logo" class="Logo" style="display: none;" src="../main_Photos/Loading.gif" alt="Logo">
 
-    <form action="#">
+    <form method="get" action="Profile.html">
 
         <div class="container">
             <label for="username"><b>Username</b></label>
             <input type="text" placeholder="Enter Username" name="username" required>
 
             <label for="password"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="password" required>
+            <input type="password" placeholder="Enter Password" name="password" required autocomplete="off">
 
             <button type="submit">Login</button>
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>
-            <span class="Login-Register">No account? <a href="Register.html">create one</a></span>
+            <span class="LoginRegister">No account? <a href="Register.html">create one</a></span>
 
         </div>
 
-        <div class="container" style="background-color:#f1f1f1">
+        <div class="container">
             <button type="button" class="ReturnButton" onclick="goBack()">Return</button>
             <span class="password">Forgot <a href="ResetPass.html">password?</a></span>
         </div>

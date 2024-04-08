@@ -14,12 +14,11 @@ function CheckPassword() {
     const password = passwordInput.value;
     const confirmPassword = confirmPasswordInput.value;
     const errorMessage = document.getElementById("ErrorMessage");
-    errorMessage.textContent = "";
 
     if (password !== confirmPassword) {
-        errorMessage.textContent = "Passwords do not match! Please Re-enter your password.";
+        errorMessage.style.display = "block";
         return false;
-    } console.log("Passwords match! Form can be submitted.");
+    }
     return true;
 }
 function goBack() {
@@ -31,5 +30,41 @@ function FullscreenImage() {
     setTimeout(() => {
         image.style.display = 'none';
     }, 3000);
+
+}
+function Show(x) {
+    var words = document.getElementsByClassName("ProfileContainer");
+    for (var i = 0; i < words.length; i++) {
+        if (words[i].id === x) {
+            words[i].style.display = "inline-block";
+        } else {
+            words[i].style.display = "none";
+        }
+    }
+}
+function get(x) {
+    const a = new URLSearchParams(window.location.search);
+    return a.get(x);
+}
+
+function UserInfo() {
+    const username = get('username');
+    const email = get('email');
+
+    const welcome = document.querySelector('.Welcome');
+    const em = document.querySelector('.Email');
+
+    welcome.textContent = "Welcome, " + username;
+
+    if (em !== null && email !== null) {
+        em.textContent = "Email: " + email;
+    }
+}
+window.onload = UserInfo;
+function ShowPass() {
+    const password = get('password');
+    const pass = document.querySelector('.Pass');
+    pass.textContent = "Password: " + password;
+
 
 }
