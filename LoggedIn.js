@@ -25,7 +25,7 @@ function goBack() {
     window.history.back();
 }
 function FullscreenImage() {
-    const image = document.getElementById("Logo");
+    const image = document.getElementById("LogoGif");
     image.style.display = image.style.display === 'none' ? 'block' : 'none';
     setTimeout(() => {
         image.style.display = 'none';
