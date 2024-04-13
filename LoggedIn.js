@@ -16,10 +16,17 @@ function CheckPassword() {
     const errorMessage = document.getElementById("ErrorMessage");
 
     if (password !== confirmPassword) {
+        const show = document.querySelector('.Alert');
+        show.innerHTML = "Passwords do not match! <br> Please Re-enter your password.";
         errorMessage.style.display = "block";
         return false;
     }
-    return true;
+    if (password.length < 5) {
+        const show = document.querySelector('.Alert');
+        show.innerHTML = "Passwords Must be longer than 5 characters! <br> Please Re-enter your password.";
+        errorMessage.style.display = "block";
+        return false;
+    }
 }
 function goBack() {
     window.history.back();
@@ -61,10 +68,22 @@ function UserInfo() {
     }
 }
 window.onload = UserInfo;
+var PV = true;
 function ShowPass() {
-    const password = get('password');
-    const pass = document.querySelector('.Pass');
-    pass.textContent = "Password: " + password;
-
+    if (PV) {
+        const password = get('password');
+        const pass = document.querySelector('.Pass');
+        pass.textContent = "Password: " + password;
+        const show = document.querySelector('.ShowPass');
+        show.textContent = "Hide Password";
+        PV = false;
+    }
+    else {
+        const pass = document.querySelector('.Pass');
+        pass.textContent = "Password:********";
+        const show = document.querySelector('.ShowPass');
+        show.textContent = "Show Password";
+        PV = true;
+    }
 
 }
