@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is Login page" />
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <link rel="stylesheet" href="Login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../LoggedIn.js"></script>
+    <title>Login</title>
+
+</head>
+
+<body onload="FullscreenImage()">
+    <nav>
+        <div class="LOGO">
+            <a href="../mainpage.html"><img src="../main_Photos/LOGO.png"></a>
+        </div>
+        <form style="display:inline-block; ">
+            <div class="search">
+                <span class="material-symbols-outlined">search</span>
+                <input type="search" class="search-input" placeholder="search...">
+            </div>
+        </form>
+        <a href="../mainpage.html"><i class="bx bxs-home"></i>Home</a>
+        <a href="Login.html"><i class='bx bxs-user'></i>Profile</a>
+        <a href="../mainpage.html#service"><i class="bx bx-cog"></i>Services</a>
+        <a href="mailto:mohamed.hmg16@gmail.com"><i class=" bx bxs-envelope"></i>Email Us</a>
+        <a href="#"><button class="addbutton"><i class="bx bx-cart-add"></i>My Cart</button></a>
+    </nav>
+
+    <img id="LogoGif" class="LogoGif" style="display: none;" src="../main_Photos/Loading.gif" alt="Logo">
+
+    <form method="get" action="Profile.html">
+
+        <div class="containerLogin">
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" required autocomplete="off">
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required autocomplete="off">
+
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            <span class="LoginRegister">No account? <a href="Register.html">create one</a></span>
+
+        </div>
+
+        <div class="containerLogin">
+            <button type="button" class="ReturnButton" onclick="goBack()">Return</button>
+            <span class="password">Forgot <a href="ResetPass.html">password?</a></span>
+        </div>
+    </form>
+
+
+
+
+
+
+
+</body>
+
+</html>

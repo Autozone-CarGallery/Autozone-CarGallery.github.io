@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is Profile page" />
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <link rel="stylesheet" href="Login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../LoggedIn.js"></script>
+    <title>Profile</title>
+</head>
+
+<body>
+    <nav>
+        <div class="LOGO">
+            <a href="../mainpage.html"><img src="../main_Photos/LOGO.png"></a>
+        </div>
+        <form style="display:inline-block; ">
+            <div class="search">
+                <span class="material-symbols-outlined">search</span>
+                <input type="search" class="search-input" placeholder="search...">
+            </div>
+        </form>
+        <a href="../mainpage.html"><i class="bx bxs-home"></i>Home</a>
+        <a href="Login.html"><i class='bx bxs-user'></i>Profile</a>
+        <a href="../mainpage.html#service"><i class="bx bx-cog"></i>Services</a>
+        <a href="mailto:mohamed.hmg16@gmail.com"><i class=" bx bxs-envelope"></i>Email Us</a>
+        <a href="#"><button class="addbutton"><i class="bx bx-cart-add"></i>My Cart</button></a>
+    </nav>
+    <div class="ProfileName">
+        <table class="Profile">
+            <tr>
+                <th>
+                    <h1 class="Welcome"></h1>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <button class=" Table" onclick="Show('info')">Info</button>
+            </tr>
+            <th>
+                <button class="Table" onclick="Show('#')">#</button>
+                </tr>
+            <th>
+                <button class="Table" onclick="Show('Settings')">Settings</button>
+                </tr>
+            <th>
+                <a href="../mainpage.html"><button class="Logout">Logout</button></a>
+                </tr>
+        </table>
+    </div>
+    <div class="ProfileContainer" id="info">
+        <h1>About</h1>
+        <p>Membership: Premium<br>
+            joined 30/2/2025</p>
+
+    </div>
+    <div class="ProfileContainer" id="#">
+        <h1>#</h1>
+        <p>###########################################</p>
+
+    </div>
+    <div class="ProfileContainer" id="Settings">
+        <h1>Settings:</h1>
+        <p class="Email" style="display: inline-block;"></p>
+        <br>
+        <p class="Pass" style="display: inline-block;">Password: ********</p>
+        <button class="ShowPass" style="width: fit-content;" onclick="ShowPass()">Show password</button>
+
+    </div>
+
+</body>
+
+
+
+
+
+
+
+
+</html>
