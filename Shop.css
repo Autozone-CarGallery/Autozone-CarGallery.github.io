@@ -6,6 +6,71 @@ body {
   overflow-x: auto;
 }
 
+nav {
+  background-color: #fff;
+  padding: 10px 0;
+  text-align: end;
+  position: relative;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: #ff0000;
+}
+
+nav .addbutton,
+.header-left .shop-button {
+  position: relative;
+  color: black;
+  background: var(--main-color);
+  padding: 1.2rem 1.5rem;
+  font-size: 1.4rem;
+  border-radius: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.header-left {
+  max-width: 620px;
+  position: relative;
+  z-index: 2;
+}
+
+.LOGO {
+  text-align: left;
+  position: relative;
+}
+
+.LOGO img {
+  position: absolute;
+  top: 0;
+  height: 80;
+}
+
+.search {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  border-radius: 28px;
+  background: #f6f6f6;
+}
+
+.search-input {
+  font-size: 16px;
+  font-family: 'lexend', sans-serif;
+  margin-left: 14px;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
 .brand-list {
   display: flex;
   flex-wrap: wrap;
@@ -32,30 +97,49 @@ body {
 .car-container {
   display: flex;
   justify-content: center;
-  /* Center the cars horizontally */
   align-items: center;
   margin-top: 50px;
   flex-wrap: wrap;
-  /* Allow wrapping */
 }
 
 .car {
-  width: 200px;
-  text-align: center;
-  margin: 0 10px 20px;
-  /* Adjust margin to add space between rows */
+  width: 300px;
+  padding: 20px;
+  border: 2rem solid #ccc;
+  border-radius: 5px;
+  margin: 30px;
+}
+
+.image-viewer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.backward-btn,
+.forward-btn {
+  font-size: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.current-image {
+  width: 270px;
+  height: 180px;
 }
 
 .add-to-cart {
-  background-color: #4CAF50;
-  /* Green */
+  background-color: #007bff;
+  color: #fff;
   border: none;
-  color: white;
+  border-radius: 5px;
   padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+  background-color: #0056b3;
 }
