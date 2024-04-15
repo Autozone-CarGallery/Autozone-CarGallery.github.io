@@ -13,7 +13,7 @@ body {
     padding: 100px;
 }
 
-.container {
+.containerabout {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -55,7 +55,7 @@ body {
     line-height: 1.6;
 }
 
-.content_section .btn {
+.content_section #btn {
     display: inline-block;
     padding: 10px 15px;
     font-size: 17px;
@@ -64,10 +64,10 @@ body {
     border-radius: 5px;
     text-decoration: none;
     margin-top: 15px;
-    transition: 0.4s ease; 
+    transition: 0.4s ease;
 }
 
-.content_section .btn:hover {
+.content_section #btn:hover {
     background-color: #1da36b;
 }
 
@@ -76,6 +76,7 @@ body {
         opacity: 0;
         transform: translateY(50px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -87,6 +88,7 @@ body {
         opacity: 0;
         transform: translateY(50px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -97,6 +99,7 @@ body {
     .container {
         flex-direction: column;
     }
+
     .image_section,
     .content_section {
         flex: 100%;
@@ -104,6 +107,7 @@ body {
         text-align: center;
         padding: 0px;
     }
+
     .image_section img {
         width: 100%;
         margin-bottom: 30px;
