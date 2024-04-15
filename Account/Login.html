@@ -14,6 +14,10 @@
 </head>
 
 <body onload="FullscreenImage()">
+    <div class="AlertBox" id="ErrorMessage">
+        <p class="Alert"></p>
+
+    </div>
     <nav>
         <div class="LOGO">
             <a href="../mainpage.html"><img src="../main_Photos/LOGO.png"></a>
@@ -33,14 +37,15 @@
 
     <img id="LogoGif" class="LogoGif" style="display: none;" src="../main_Photos/Loading.gif" alt="Logo">
 
-    <form method="get" action="Profile.html">
+    <form method="get" action="Profile.html" onsubmit=" return CheckInputs()">
 
         <div class="containerLogin">
             <label for="username"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="username" required autocomplete="off">
+            <input type="text" id="username" placeholder="Enter Username" name="username" required autocomplete="off">
 
             <label for="password"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="password" required autocomplete="off">
+            <input type="password" id="password" placeholder="Enter Password" name="password" required
+                autocomplete="off">
 
             <button type="submit">Login</button>
             <label>

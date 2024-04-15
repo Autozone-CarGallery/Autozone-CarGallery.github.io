@@ -38,13 +38,13 @@
 
     <img id="LogoGif" class="LogoGif" style="display: none;" src="../main_Photos/Loading.gif" alt="Logo">
 
-    <form onsubmit="return CheckPassword()" method="get" action="Profile.html">
+    <form id="Re_form" onsubmit="return CheckPassword()" method="get" action="Profile.html">
 
         <div class="containerLogin">
             <label for="username"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="username" required autocomplete="off">
+            <input type="text" id="username" placeholder="Enter Username" name="username" required autocomplete="off">
             <label for="Email"><b>Email</b></label>
-            <input type="email" placeholder="Enter Email" name="email" required>
+            <input type="email" id="email" placeholder="Enter Email" name="email" required>
             <label for="password"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="password" id="password" required>
             <label for="PasswordConfirm"><b>Re-Enter Password</b></label>
