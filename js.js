@@ -1,15 +1,17 @@
     function addToCart(carId) {
       let carName = `Car ${carId}`;
       let speed = parseFloat(document.getElementById(`car${carId}-speed`).textContent);
-      alert(`${carName} added to cart with speed ${speed} mph.`);
+      alert(`${carName} added to cart with speed ${speed} Km/h.`);
   }
 
   document.addEventListener("DOMContentLoaded", function() {
     const imageSets = [
+
       ["/Cars/BMW/3/download.png", "/Cars/BMW/3/download (2).png", "/Cars/BMW/3/download (1).png", "/Cars/BMW/3/cq5dam.resized.img.1680.large.time1687423776513.jpg"],
       ["/Cars/BMW/5/2024-bmw-530i-xdrive-123-65808a4e31e3a.jpg", "/Cars/BMW/5/2024-bmw-530i-xdrive-118-65808a4c3d44a.jpg", "/Cars/BMW/5/2024-bmw-530i-xdrive-116-6580912c795a3.jpg", "/Cars/BMW/5/2024-bmw-530i-xdrive-108-65808a48e348e.jpg", "/Cars/BMW/5/2024-bmw-530i-xdrive-107-65808a48d5052.jpg" ,"/Cars/BMW/5/2024-bmw-530i-xdrive-106-65808a47dae3e.jpg", "/Cars/BMW/5/2024-bmw-530i-xdrive-102-65808a46b7d5b.jpg", "/Cars/BMW/5/2024-bmw-530i-xdrive-101-65808a46cad5c.jpg"],
       ["/Cars/BMW/7/p90486124-2023-bmw-760i-xdr-1667835081.jpg", "/Cars/BMW/7/p90486121-2023-bmw-760i-xdr-1667835075.jpg", "/Cars/BMW/7/p90486119-2023-bmw-760i-xdr-1667835074.jpg", "/Cars/BMW/7/p90486114-2023-bmw-760i-xdr-1667835057.jpg","/Cars/BMW/7/p90486113-2023-bmw-760i-xdr-1667835067.jpg","/Cars/BMW/7/p90486112-2023-bmw-760i-xdr-1667835067.jpg","/Cars/BMW/7/p90486108-2023-bmw-760i-xdr-1667835058.jpg","/Cars/BMW/7/p90486102-2023-bmw-760i-xdr-1667835057.jpg","/Cars/BMW/7/p90486093-2023-bmw-760i-xdr-1667835058.jpg"],
       ["/Cars/BMW/BMW M8 Gran Coupe/2020-bmw-m8-gran-coupe-competition-101-1570570427.jpg", "/Cars/BMW/BMW M8 Gran Coupe/2020-bmw-m8-gran-coupe-competition-102-1570570424.jpg", "/Cars/BMW/BMW M8 Gran Coupe/2020-bmw-m8-gran-coupe-competition-103-1570570423.jpg","/Cars/BMW/BMW M8 Gran Coupe/2020-bmw-m8-gran-coupe-competition-105-1570570424.jpg","/Cars/BMW/BMW M8 Gran Coupe/2020-bmw-m8-gran-coupe-competition-106-1570570424.jpg","/Cars/BMW/BMW M8 Gran Coupe/2020-bmw-m8-gran-coupe-competition-115-1570570428.jpg","/Cars/BMW/BMW M8 Gran Coupe/2020-bmw-m8-gran-coupe-competition-117-1570570428.jpg","/Cars/BMW/BMW M8 Gran Coupe/2020-bmw-m8-gran-coupe-competition-128-1570570432.jpg","/Cars/BMW/BMW M8 Gran Coupe/2020-bmw-m8-gran-coupe-competition-130-1570570433.jpg","/Cars/BMW/BMW M8 Gran Coupe/2020-bmw-m8-gran-coupe-competition-134-1570570435.jpg"],
+
       ["/Cars/Mercedes/CLA/0a519e2eec5f44d89bafb14e1daebc96.jpg", "/Cars/Mercedes/CLA/2024_Mercedes_Benz_CLA_250_Rose-Gold_Black_010.webp", "/Cars/Mercedes/CLA/5e2e56203c7144fea22cc7ce5bc838df.jpg", "/Cars/Mercedes/CLA/da7a2e2d11ad4c67a7cda407f134f699.jpg"],
       ["/Cars/Mercedes/A_Class/373692526a61404e8e6df8a8aa21edff.jpg", "/Cars/Mercedes/A_Class/4e5eba640b2644ab853a38317da281fa.jpg", "/Cars/Mercedes/A_Class/801c79c49b5046f3805f8b7e5cba85da.jpg", "/Cars/Mercedes/A_Class/83958660309e48749513b339a12468e9.jpg", "/Cars/Mercedes/A_Class/88218fe9612140189625d33514261fe4.jpg","/Cars/Mercedes/A_Class/8c9b204b7094413c9febbcd936d7102b.jpg","/Cars/Mercedes/A_Class/bcf2546bf7e94c5587b731be1b460b3c.jpg","/Cars/Mercedes/A_Class/f5d2c7d73fd0497dabefecefaf559a3c.jpg"],
       ["/Cars/Mercedes/B_Class/043b9daba97042e2b8ddf32073d50953.jpg", "/Cars/Mercedes/B_Class/87-mercedes-b-class-dash.jpg", "/Cars/Mercedes/B_Class/b43037cf53da44b8b232ac042e942785.jpg", "/Cars/Mercedes/B_Class/da6a549b761d4f459b3656c718a55349.jpg"],
