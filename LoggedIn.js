@@ -134,3 +134,8 @@ function ShowPass() {
     }
 
 }
+function startVideo() {
+    const carvid = document.getElementById('carvid');
+    carvid.play();
+    carvid.playbackRate = 1.5;
+}
