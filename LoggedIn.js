@@ -1,7 +1,6 @@
-localStorage.setItem('LoggedIn', 'false');
+
 function CheckLogin() {
-    const isLoggedIn = localStorage.getItem('LoggedIn') === 'true';
-    if (isLoggedIn) {
+    if (localStorage.getItem('LoggedIn') === 'true') {
         return true;
     } else {
         window.location.href = "Account/Login.html";
