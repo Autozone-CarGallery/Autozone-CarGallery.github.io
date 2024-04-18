@@ -1,10 +1,17 @@
-localStorage.setItem('LoggedIn', 'false');
+
 function CheckLogin() {
-    const isLoggedIn = localStorage.getItem('LoggedIn') === 'true';
-    if (isLoggedIn) {
+    if (localStorage.getItem('LoggedIn') === 'true') {
         return true;
     } else {
         window.location.href = "Account/Login.html";
+        return false;
+    }
+}
+function CheckLoginin() {
+    if (localStorage.getItem('LoggedIn') === 'true') {
+        return true;
+    } else {
+        window.location.href = "../Account/Login.html";
         return false;
     }
 }
@@ -133,4 +140,9 @@ function ShowPass() {
         PV = true;
     }
 
+}
+function startVideo() {
+    const carvid = document.getElementById('carvid');
+    carvid.play();
+    carvid.playbackRate = 1.5;
 }

@@ -15,6 +15,7 @@ nav {
 nav a {
   color: black;
   text-decoration: none;
+  font-weight: bolder;
   margin: 0 10px;
 }
 
