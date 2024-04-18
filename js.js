@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ["Cars/BMW/BMW M8 Gran Coupe/1.jpg", "Cars/BMW/BMW M8 Gran Coupe/2.jpg", "Cars/BMW/BMW M8 Gran Coupe/3.jpg", "Cars/BMW/BMW M8 Gran Coupe/4.jpg", "Cars/BMW/BMW M8 Gran Coupe/5.jpg", "Cars/BMW/BMW M8 Gran Coupe/6.jpg", "Cars/BMW/BMW M8 Gran Coupe/7.jpg", "Cars/BMW/BMW M8 Gran Coupe/8.jpg", "Cars/BMW/BMW M8 Gran Coupe/9.jpg", "Cars/BMW/BMW M8 Gran Coupe/10.jpg"],
     ["Cars/Mercedes/CLA/1.jpg", "Cars/Mercedes/CLA/2.webp", "Cars/Mercedes/CLA/3.jpg", "Cars/Mercedes/CLA/4.jpg"],
     ["Cars/Mercedes/A_Class/1.jpg", "Cars/Mercedes/A_Class/2.jpg", "Cars/Mercedes/A_Class/3.jpg", "Cars/Mercedes/A_Class/4.jpg", "Cars/Mercedes/A_Class/5.jpg", "Cars/Mercedes/A_Class/6.jpg", "Cars/Mercedes/A_Class/7.jpg", "/Cars/Mercedes/A_Class/8.jpg"],
-    ["Cars/Mercedes/B_Class/1.jpg", "Cars/Mercedes/B_Class/2.jpg", "Cars/Mercedes/B_Class/3.jpg", "Cars/Mercedes/B_Class/4.jpg"],
+    ["Cars/Mercedes/B_Class/640px-Mercedes-Benz_B-Class.jpg", "Cars/Mercedes/B_Class/2.jpg", "Cars/Mercedes/B_Class/Mercedes-Benz_B-Class_at_the_Frankfurt_Motor_Show_IAA_2011_(6147726918).jpg"],
     ["Cars/Mercedes/C_Class/1.jpg", "Cars/Mercedes/C_Class/2.jpg", "Cars/Mercedes/C_Class/3.jpg", "Cars/Mercedes/C_Class/4.jpg", "Cars/Mercedes/C_Class/5.jpg", "Cars/Mercedes/C_Class/6.jpg", "Cars/Mercedes/C_Class/7.jpg", "Cars/Mercedes/C_Class/8.jpg"],
     ["Cars/Mercedes/E_Class/1.jpg", "Cars/Mercedes/E_Class/2.jpg", "Cars/Mercedes/E_Class/3.jpg", "Cars/Mercedes/E_Class/4.jpg", "Cars/Mercedes/E_Class/5.jpg", "Cars/Mercedes/E_Class/6.jpg", "Cars/Mercedes/E_Class/7.jpg", "Cars/Mercedes/E_Class/8.jpg", "Cars/Mercedes/E_Class/9.jpg"],
     // Add more sets of image URLs as needed
