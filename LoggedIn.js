@@ -7,6 +7,14 @@ function CheckLogin() {
         return false;
     }
 }
+function CheckLoginin() {
+    if (localStorage.getItem('LoggedIn') === 'true') {
+        return true;
+    } else {
+        window.location.href = "../Account/Login.html";
+        return false;
+    }
+}
 function Logout() {
     localStorage.setItem('LoggedIn', 'false');
     window.location.href = "../mainpage.html";
