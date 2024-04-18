@@ -130,25 +130,19 @@ body {
     font-weight: 400;
     src: url(123.woff2) format('woff2');
   }
-  .charger {
-    background-image: url("Cars\Dodge\charger.jpeg");
-    background-size: cover;
-  }
   .charp1{
-    width: 550px;
+    width: 650px;
     height: 400px;
     float:left;
   }
   .charger{
-
-    width: 70%;
+    width: 80%;
     left :15%;
     top: 20%;
     padding: 20px;
-   background-image: url("C:\Users\pc\Documents\GitHub\IT-project\Cars\Dodge\charger.jpeg"); 
+    padding-left: 50;
   }
   * {
-    /* Change your font family */
     font-family: sans-serif;
 }
 
@@ -186,10 +180,6 @@ body {
     border-bottom: 2px solid #009879;
 }
 
-.content-table tbody tr.active-row {
-    font-weight: bold;
-    color: #009879;
-}
 .my-button {
   background-color: #009879; 
   border: none; 
@@ -209,4 +199,20 @@ body {
 .my-button:hover {
   background-color: #009879; /* Darker green background color on hover */
   border-radius: 100px;
+}
+body{
+  background: rgb(0,0, 0,0.5) url("Cars/Dodge/OIP.jpeg") center center fixed;
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+}
+h1{
+  color: #bc8181;
+  font-style: initial;
+}
+p{
+  color: #dddddd;
+}
+table{
+  color: #dddddd;
 }
