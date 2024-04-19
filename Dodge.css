@@ -216,3 +216,15 @@ p{
 table{
   color: #dddddd;
 }
+.charp1{
+  width: 750px;
+  height: 400px;
+  float:left;
+}
+.challenger{
+  width: 80%;
+  left :15%;
+  top: 20%;
+  padding: 20px;
+  padding-left: 50;
+}
