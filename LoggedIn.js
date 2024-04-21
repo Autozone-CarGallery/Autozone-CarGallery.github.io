@@ -1,9 +1,65 @@
+
 function CheckLogin() {
-    var LoggedIn = false;
-    if (LoggedIn) {
+    if (localStorage.getItem('LoggedIn') === 'true') {
         return true;
     } else {
         window.location.href = "Account/Login.html";
+        return false;
+    }
+}
+function CheckLoginin() {
+    if (localStorage.getItem('LoggedIn') === 'true') {
+        return true;
+    } else {
+        window.location.href = "../Account/Login.html";
+        return false;
+    }
+}
+function Logout() {
+    localStorage.setItem('LoggedIn', 'false');
+    window.location.href = "../mainpage.html";
+
+}
+
+function SaveInputs() {
+    const Inputusername = document.getElementById('username').value;
+    const Inputpassword = document.getElementById('password').value;
+    const Inputemail = document.getElementById('email').value;
+    localStorage.setItem('username', Inputusername);
+    localStorage.setItem('password', Inputpassword);
+    localStorage.setItem('email', Inputemail);
+    document.getElementById('Re_form').submit();
+    localStorage.setItem('LoggedIn', 'true');
+}
+function CheckInputs() {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const savedusername = localStorage.getItem('username');
+    const savedpassword = localStorage.getItem('password');
+    if (username === savedusername && password === savedpassword) {
+        localStorage.setItem('LoggedIn', 'true');
+        return true;
+    }
+    else if (!savedusername) {
+        const errorMessage = document.getElementById("ErrorMessage");
+        const show = document.querySelector('.Alert');
+        show.innerHTML = "Account does not exist. Please register.";
+        errorMessage.style.display = "block";
+        return false;
+
+    }
+    if (username !== savedusername || password !== savedpassword) {  // Use secure comparison for hashed password
+        const errorMessage = document.getElementById("ErrorMessage");
+        const show = document.querySelector('.Alert');
+        show.innerHTML = "Invalid username or password.";
+        errorMessage.style.display = "block";
+        return false;
+    }
+    else {
+        const errorMessage = document.getElementById("ErrorMessage");
+        const show = document.querySelector('.Alert');
+        show.innerHTML = "&#9888; Error!!";
+        errorMessage.style.display = "block";
         return false;
     }
 }
@@ -27,6 +83,7 @@ function CheckPassword() {
         errorMessage.style.display = "block";
         return false;
     }
+    SaveInputs();
 }
 function goBack() {
     window.history.back();
@@ -49,14 +106,11 @@ function Show(x) {
         }
     }
 }
-function get(x) {
-    const a = new URLSearchParams(window.location.search);
-    return a.get(x);
-}
+
 
 function UserInfo() {
-    const username = get('username');
-    const email = get('email');
+    const username = localStorage.getItem('username');
+    const email = localStorage.getItem('email');
 
     const welcome = document.querySelector('.Welcome');
     const em = document.querySelector('.Email');
@@ -71,7 +125,7 @@ window.onload = UserInfo;
 var PV = true;
 function ShowPass() {
     if (PV) {
-        const password = get('password');
+        const password = localStorage.getItem('password');
         const pass = document.querySelector('.Pass');
         pass.textContent = "Password: " + password;
         const show = document.querySelector('.ShowPass');
@@ -86,4 +140,9 @@ function ShowPass() {
         PV = true;
     }
 
+}
+function startVideo() {
+    const carvid = document.getElementById('carvid');
+    carvid.play();
+    carvid.playbackRate = 1.5;
 }

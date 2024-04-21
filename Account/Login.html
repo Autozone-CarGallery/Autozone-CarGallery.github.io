@@ -14,6 +14,10 @@
 </head>
 
 <body onload="FullscreenImage()">
+    <div class="AlertBox" id="ErrorMessage">
+        <p class="Alert"></p>
+
+    </div>
     <nav>
         <div class="LOGO">
             <a href="../mainpage.html"><img src="../main_Photos/LOGO.png"></a>
@@ -25,22 +29,23 @@
             </div>
         </form>
         <a href="../mainpage.html"><i class="bx bxs-home"></i>Home</a>
-        <a href="Login.html"><i class='bx bxs-user'></i>Profile</a>
-        <a href="../mainpage.html#service"><i class="bx bx-cog"></i>Services</a>
-        <a href="mailto:mohamed.hmg16@gmail.com"><i class=" bx bxs-envelope"></i>Email Us</a>
+        <a href="Profile.html" onclick="return CheckLogin()"><i class='bx bxs-user'></i>Profile</a>
+        <a href="../mainpage.html#service"><i class="bx bxs-cog"></i>Services</a>
+        <a href="../About Us Page/aboutus.html"><i class=" bx bxs-info-circle"></i>About</a>
         <a href="#"><button class="addbutton"><i class="bx bx-cart-add"></i>My Cart</button></a>
     </nav>
 
     <img id="LogoGif" class="LogoGif" style="display: none;" src="../main_Photos/Loading.gif" alt="Logo">
 
-    <form method="get" action="Profile.html">
+    <form method="get" action="Profile.html" onsubmit=" return CheckInputs()">
 
         <div class="containerLogin">
             <label for="username"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="username" required autocomplete="off">
+            <input type="text" id="username" placeholder="Enter Username" name="username" required autocomplete="off">
 
             <label for="password"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="password" required autocomplete="off">
+            <input type="password" id="password" placeholder="Enter Password" name="password" required
+                autocomplete="off">
 
             <button type="submit">Login</button>
             <label>

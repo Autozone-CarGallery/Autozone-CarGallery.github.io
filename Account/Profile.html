@@ -24,9 +24,9 @@
             </div>
         </form>
         <a href="../mainpage.html"><i class="bx bxs-home"></i>Home</a>
-        <a href="Login.html"><i class='bx bxs-user'></i>Profile</a>
-        <a href="../mainpage.html#service"><i class="bx bx-cog"></i>Services</a>
-        <a href="mailto:mohamed.hmg16@gmail.com"><i class=" bx bxs-envelope"></i>Email Us</a>
+        <a href="Profile.html" onclick="return CheckLogin()"><i class='bx bxs-user'></i>Profile</a>
+        <a href="../mainpage.html#service"><i class="bx bxs-cog"></i>Services</a>
+        <a href="../About Us Page/aboutus.html"><i class=" bx bxs-info-circle"></i>About</a>
         <a href="#"><button class="addbutton"><i class="bx bx-cart-add"></i>My Cart</button></a>
     </nav>
     <div class="ProfileName">
@@ -38,7 +38,7 @@
             </tr>
             <tr>
                 <th>
-                    <button class=" Table" onclick="Show('info')">Info</button>
+                    <button class=" Table" onclick="Show('info'),startVideo()">Info</button>
             </tr>
             <th>
                 <button class="Table" onclick="Show('#')">#</button>
@@ -47,7 +47,7 @@
                 <button class="Table" onclick="Show('Settings')">Settings</button>
                 </tr>
             <th>
-                <a href="../mainpage.html"><button class="Logout">Logout</button></a>
+                <button class="Logout" onclick="Logout()">Logout</button></a>
                 </tr>
         </table>
     </div>
@@ -55,11 +55,14 @@
         <h1>About</h1>
         <p>Membership: Premium<br>
             joined 30/2/2025</p>
-
+        <div>
+            <video src="1.mp4" id="carvid" loop>KA-CHOW!!</video>
+        </div>
     </div>
     <div class="ProfileContainer" id="#">
         <h1>#</h1>
-        <p>###########################################</p>
+        <p><iframe src="../Shop.html" width="100%" height="1000px" frameborder="0" title="Shop">previw a
+                webpage</iframe></p>
 
     </div>
     <div class="ProfileContainer" id="Settings">
