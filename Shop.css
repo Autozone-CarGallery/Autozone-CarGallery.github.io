@@ -254,16 +254,14 @@ th {
 
 .left {
   left: 0; /* Align the left iframe to the left side */
-  margin-left: 0.4cm;
-  margin-top: 2%;
+  margin: 30px 50px 60px 20px;
   position: absolute; /* Position the iframes absolutely within the container */
   width: 300px;
 }
 
 .right {
   right: 0; /* Align the right iframe to the right side */
-  margin-right: 0.4cm;
-  margin-top: 2%;
+  margin: 30px 20px 60px 50px;
   position: absolute; /* Position the iframes absolutely within the container */
   width: 300px;
 }
