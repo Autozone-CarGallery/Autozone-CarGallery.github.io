@@ -1,56 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css</title>
+    <title>KIA</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <script src="../LoggedIn.js"></script>
     <link rel="stylesheet" href="css/master.css">
 </head>
-<body>
+
+<body style="background-color: grey;">
+    <nav>
+        <div class="LOGO">
+            <a href="../mainpage.html"><img width="30%" src="../main_Photos/LOGO.png"></a>
+        </div>
+        <form style="display:inline-block; ">
+            <div class="search">
+                <span class="material-symbols-outlined">search</span>
+                <input type="search" class="search-input" placeholder="search...">
+            </div>
+        </form>
+        <a href="../mainpage.html"><i class="bx bxs-home"></i>Home</a>
+        <a href="../Account/Profile.html" onclick="return CheckLoginin()"><i class='bx bxs-user'></i>Profile</a>
+        <a href="../mainpage.html#service"><i class="bx bxs-cog"></i>Services</a>
+        <a href="../About Us Page/aboutus.html"><i class=" bx bxs-info-circle"></i>About</a>
+        <a href="#"><button class="addbutton"><i class="bx bx-cart-add"></i>My Cart</button></a>
+    </nav>
     <seation class="cars" id="cars">
-        <div class="heading">
-            <span>all cars</span>
-            <h2>kia</h2>
-    
+        <div>
+            <h1>Kia</h1>
+
         </div>
         <div class="cars-container container">
             <div class="box">
                 <img src="imgs/kia sportage/19a2bf5c-95fe-43fb-8f35-e2f3c1b7df38.jpeg">
                 <h2> kia sportage </h2>
                 <a href="kia sportage.html">
-                     <img src="imgs/kia sportage/5ccbfb2b-1a01-4ed4-94d3-85f64bd163ef.jpeg" alt=""></a>
-            
-            </div>        
-               <div class="box">
+                    <img src="imgs/kia sportage/5ccbfb2b-1a01-4ed4-94d3-85f64bd163ef.jpeg" alt=""></a>
+
+            </div>
+            <div class="box">
                 <img src="imgs/kia soul/OIP (1).jpeg">
                 <h2> kia soul </h2>
             </div>
-             <div class="box">
-            <img src="imgs/kia prototype/kia-ceed-suv-incoming-will-join-proceed-replacing-shooting-brake-121941-7.jpg">
-            <h2> kia prototype </h2>
-        </div>
-         <div
-          class="box">
+            <div class="box">
+                <img
+                    src="imgs/kia prototype/kia-ceed-suv-incoming-will-join-proceed-replacing-shooting-brake-121941-7.jpg">
+                <h2> kia prototype </h2>
+            </div>
+            <div class="box">
                 <img src="imgs/kia k3/450_1000.jpg">
-                <h2> kia k3  </h2>
-         </div>
-         <div class="box">
-            <img src="imgs/kia ev9/R.jpeg">
-            <h2>kia ev9</h2>
-         </div>
+                <h2> kia k3 </h2>
+            </div>
+            <div class="box">
+                <img src="imgs/kia ev9/R.jpeg">
+                <h2>kia ev9</h2>
+            </div>
 
         </div>
-    </seation> 
+    </seation>
 
-    
 
-    </body>
-    
-    </html>
 
-        
-        
-        
+</body>
 
-    
-
+</html>
