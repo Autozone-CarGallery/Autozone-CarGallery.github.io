@@ -1,7 +1,14 @@
-function addToCart(carId) {
-  let carName = `Car ${carId}`;
-  let speed = parseFloat(document.getElementById(`car${carId}-speed`).textContent);
-  alert(`${carName} added to cart with speed ${speed} Km\h.`);
+let addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+addToCartButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        var carName = this.getAttribute("onclick");
+        addToCart(carName);
+    });
+});
+
+function addToCart(carName) {
+    alert("You Bought " + carName );
 }
 
 document.addEventListener("DOMContentLoaded", function () {
