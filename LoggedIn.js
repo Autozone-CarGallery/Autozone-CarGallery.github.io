@@ -17,7 +17,7 @@ function CheckLoginin() {
 }
 function Logout() {
     localStorage.setItem('LoggedIn', 'false');
-    window.location.href = "../mainpage.html";
+    window.location.href = "../Index.html";
 
 }
 
