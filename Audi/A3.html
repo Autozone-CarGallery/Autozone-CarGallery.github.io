@@ -12,20 +12,28 @@
                 font-size: 0.9cm;
                 min-width: 2000 px;
                 text-align: center;
+                margin-left: auto;
+                margin-right: auto;
             }
           tbody  tr#a{
-                background-color: #009879;
+                background-color: hsl(168, 100%, 30%);
                 color: white;
-                
+                background-size: cover;
 
             }
-            content-table th.th{
+            table th.th{
                 padding:12px 15px;
             }
             content-table td.td{
                 padding: 12 px 15 px;
             }
-            tbody tr#{}
+            tbody tr#b{color: white;}
+            tbody tr#c{color: white; background-color:hsl(168, 100%, 30%) ;}
+            #ab{text-align: center;}
+            tr#d{color: white;}
+            tr#e{color: white; background-color: hsl(168, 100%, 30%);}
+            button{background-color:white;
+                text-align: center;}
         </style>
     </head>
     <body>
@@ -46,20 +54,21 @@
                 <th class="th">Engine</th>
                 <td class="td">1968</td>
             </tr>
-            <tr id="3">
+            <tr id="c">
                 <th class="th" >Top Speed</th>
-                <td class="td"> 249 Km/h</td>
+                <td class="td" id="ab"> 249 Km/h</td>
             </tr>
-            <tr id="4">
+            <tr id="d">
                 <th  class="th">Origin</th>
                 <td class="td">Germany</td>
             </tr>
-            <tr id="5">
+            <tr id="e">
             <th  class="th">Price</th>
             <td class="td">45,000$</td>
             </tr>
             </tbody>
         </table>
-
+        <br>
+            <button>Buy Now</button>
     </body>
 </html>
