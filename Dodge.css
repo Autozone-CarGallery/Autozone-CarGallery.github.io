@@ -195,7 +195,6 @@ body {
   border-radius: 50;
 }
 
-/* Hover effect */
 .my-button:hover {
   background-color: #009879; /* Darker green background color on hover */
   border-radius: 100px;
@@ -239,4 +238,25 @@ table{
   width: 550px;
   height: 400px;
   float:left;
+}
+.Hornet{
+  width: 80%;
+  left :15%;
+  top: 20%;
+  padding: 20px;
+  padding-left: 50;
+}
+.result-box ul{
+  border-top: 1px solid #999;
+  padding: 15px 10px;
+float: left;
+}
+.result-box ul li{
+  list-style: none;
+  border-radius: 3px;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+.result-box ul li:hover{
+  background-color: #e9f3ff;
 }
