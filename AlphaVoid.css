@@ -64,7 +64,7 @@ caption {
     font-size: 1.2em;
     font-weight: bold;
     padding: 10px;
-    background-color: #f0f0f0;
+    background-color: #007bff;
 }
 
 
@@ -84,7 +84,6 @@ td {
 td span {
     font-weight: bold;
 }
-
 
 p {
     margin-bottom: 15px;
@@ -120,9 +119,3 @@ del {
     padding: 10px;
 }
 
-.iframe {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 450px;
-}
