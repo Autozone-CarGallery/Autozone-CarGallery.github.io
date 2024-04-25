@@ -146,3 +146,44 @@ function startVideo() {
     carvid.play();
     carvid.playbackRate = 1.5;
 }
+var AW = true;
+function Arrow() {
+    const Arrow = document.getElementById("DA");
+    const Logout = document.getElementById("Logout");
+    const ARW = document.getElementById("ARROW");
+    if (AW) {
+        Arrow.innerHTML = "Delete Account";
+        ARW.innerHTML = "&#8659;";
+        Arrow.style.display = "block";
+        Logout.style.display = "none";
+        AW = false;
+    }
+    else {
+        ARW.innerHTML = "&#8657;";
+        Arrow.style.display = "none";
+        Logout.style.display = "block";
+        AW = true;
+    }
+}
+
+function DA() {
+    localStorage.setItem('username', null);
+    localStorage.setItem('password', null);
+    localStorage.setItem('email', null);
+}
+function NDA() {
+    const Notice = document.getElementById("ErrorMessage");
+    const show = document.querySelector('.Alert');
+    show.innerHTML = "&#9888;<br>THIS ACTION IS IRREVERSABLE <br> ARE YOU SURE YOU WANT TO CONTINUE?<br>&#9888;";
+    Notice.style.display = "block";
+
+
+
+
+}
+function No() {
+
+    document.getElementById("ErrorMessage").style.display = "none";
+
+
+}

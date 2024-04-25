@@ -239,17 +239,14 @@ table {
   padding: 20px;
   padding-left: 50;
 }
-.result-box ul{
-  border-top: 1px solid #999;
-  padding: 15px 10px;
-float: left;
+.charp3:hover{
+  background-color: #009879;
+  border-radius: 20px;
+} 
+th:hover{
+  background-color: #009879;
+  border-radius: 20PX;
 }
-.result-box ul li{
-  list-style: none;
-  border-radius: 3px;
-  padding: 15px 10px;
-  cursor: pointer;
-}
-.result-box ul li:hover{
-  background-color: #e9f3ff;
+p :hover{
+  font-size: 400;
 }
