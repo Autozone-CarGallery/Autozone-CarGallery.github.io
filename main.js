@@ -187,7 +187,7 @@ function No() {
 
 
 }
-//--------------------------Mohamed hossam part start here-----------------------------//
+//-------------------------------------------------------Mohamed hossam part start here-----------------------------------------------------------------------------------------//
 let addToCartButtons = document.querySelectorAll(".add-to-cart");
 
 addToCartButtons.forEach(function (button) {
@@ -279,3 +279,49 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 });
+//-------------------------------------------------------Mahmoud part start here-----------------------------------------------------------------------------------------//
+document.addEventListener('DOMContentLoaded', function () {
+    var buyButtons = document.querySelectorAll('.add');
+    buyButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            alert('Bought Successfully!');
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const spans = document.querySelectorAll('td span');
+
+    spans.forEach(span => {
+        span.addEventListener('mouseover', function () {
+            this.style.color = '#007bff';
+        });
+
+        span.addEventListener('mouseout', function () {
+            this.style.color = '';
+        });
+    });
+});
+
+
+function f() {
+    console.log("Submit button clicked!");
+
+    const carName = document.getElementById("car-name").value;
+    const carModel = document.getElementById("car-model").value;
+    const comments = document.getElementById("comments").value;
+
+
+    localStorage.setItem("carName", carName);
+    localStorage.setItem("carModel", carModel);
+    localStorage.setItem("comments", comments);
+
+
+    document.getElementById("car-name").value = "";
+    document.getElementById("car-model").value = "";
+    document.getElementById("comments").value = "";
+
+
+    alert("Submitted successfully!");
+}
+
