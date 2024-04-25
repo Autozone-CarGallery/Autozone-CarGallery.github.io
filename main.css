@@ -317,6 +317,8 @@ nav .addbutton {
 
 
 .container {
+  position: relative;
+  overflow: hidden;
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
@@ -474,20 +476,20 @@ nav .addbutton {
   height: 100%;
 }
 
-table {
+.table1 {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
 }
 
-th,
-td {
+.th1,
+.td1 {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: center;
 }
 
-th {
+.th1 {
   background-color: #f2f2f2;
 }
 
