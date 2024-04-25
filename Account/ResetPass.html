@@ -7,15 +7,14 @@
     <meta name="description" content="This Reseting Password page" />
     <link rel="stylesheet" type="text/css" href="../main.css">
     <link rel="stylesheet" href="Login.css">
+    <link rel="icon" href="../main_Photos/LOGO-ICON.ico">
     <title>Forgot Password</title>
 </head>
 
 <body>
-
-    <div class="LOGO">
-        <a href="../mainpage.html"><img src="../main_Photos/LOGO.png"></a>
+    <div style="text-align: center;">
+        <a href="../index.html"><img style="text-align: center;" src="../main_Photos/LOGO.png"></a>
     </div>
-
 
     <div id="forgot">
         <h1 class="" style="text-align: center;">
@@ -30,9 +29,13 @@
             <div class="EmailReset">
                 <input class="Email" placeholder="Email" name="email" type="email" required>
             </div>
-            <button type="button" class="MainPageReturn"
-                onclick="window.location.href='../mainpage.html'">Return</button>
-
+            <h2>Note:</h2>
+            <ol type="I">
+                <li>Account must be over 1 week old.</li>
+                <li>Account must be linked to this email.</li>
+                <li>Make sure to check spam for the recovery email.</li>
+            </ol>
+            <button type="button" class="ReturnButton" onclick="window.location.href='../index.html'">Return</button>
         </form>
     </div>
 

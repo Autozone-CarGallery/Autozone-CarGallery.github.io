@@ -10,51 +10,65 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="../LoggedIn.js"></script>
     <title>Profile</title>
+    <link rel="icon" href="Profile.png">
 </head>
 
 <body>
+    <div class="AlertBox" id="ErrorMessage">
+        <p class="Alert"></p>
+        <button onclick="DA()">yes</button><button onclick="No()">No</button>
+    </div>
     <nav>
-        <div class="LOGO">
-            <a href="../mainpage.html"><img src="../main_Photos/LOGO.png"></a>
-        </div>
-        <form style="display:inline-block; ">
+        <a href="../index.html"><img src="../main_Photos/LOGO.png"></a>
+        <form>
             <div class="search">
                 <span class="material-symbols-outlined">search</span>
                 <input type="search" class="search-input" placeholder="search...">
             </div>
         </form>
-        <a href="../mainpage.html"><i class="bx bxs-home"></i>Home</a>
+        <a href="../index.html"><i class="bx bxs-home"></i>Home</a>
         <a href="Profile.html" onclick="return CheckLogin()"><i class='bx bxs-user'></i>Profile</a>
-        <a href="../mainpage.html#service"><i class="bx bxs-cog"></i>Services</a>
+        <a href="../index.html#service"><i class="bx bxs-cog"></i>Services</a>
         <a href="../About Us Page/aboutus.html"><i class=" bx bxs-info-circle"></i>About</a>
-        <a href="#"><button class="addbutton"><i class="bx bx-cart-add"></i>My Cart</button></a>
+        <a href="../shop.html"><button class="addbutton"><i class="bx bx-cart-add"></i>Shop</button></a>
     </nav>
     <div class="ProfileName">
         <table class="Profile">
             <tr>
-                <th>
+                <td class="tdp" colspan="2">
                     <h1 class="Welcome"></h1>
-                </th>
+                </td>
             </tr>
             <tr>
-                <th>
+                <td class="tdp" colspan="2">
                     <button class=" Table" onclick="Show('info'),startVideo()">Info</button>
+                </td>
             </tr>
-            <th>
-                <button class="Table" onclick="Show('#')">#</button>
-                </tr>
-            <th>
-                <button class="Table" onclick="Show('Settings')">Settings</button>
-                </tr>
-            <th>
-                <button class="Logout" onclick="Logout()">Logout</button></a>
-                </tr>
+            <tr>
+                <td class="tdp" colspan="2">
+                    <button class="Table" onclick="Show('#')">#</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdp" colspan="2">
+                    <button class="Table" onclick="Show('Settings')">Settings</button>
+                </td>
+            </tr>
+            <tr style="display: flex;">
+                <td class="Tdelete"><button class="delete" id="ARROW" style="width: fit-content;"
+                        onclick="Arrow()">&#8657;</button></td>
+
+                <td class="tdp">
+                    <button class="Logout" id="Logout" onclick="Logout()">Logout</button>
+                    <button class="DA" id="DA" onclick="NDA()" style="display: none;"></button>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="ProfileContainer" id="info">
-        <h1>About</h1>
+        <h1>About:</h1>
         <p>Membership: Premium<br>
-            joined 30/2/2025</p>
+            Date of join: 30/2/2025</p>
         <div>
             <video src="1.mp4" id="carvid" loop>KA-CHOW!!</video>
         </div>
