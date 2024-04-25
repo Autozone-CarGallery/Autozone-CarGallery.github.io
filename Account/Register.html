@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="../main.css">
     <link rel="stylesheet" href="Login.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="../LoggedIn.js"></script>
+    <script src="../main.js"></script>
     <link rel="icon" href="../main_Photos/LOGO-ICON.ico">
     <title>Register</title>
 
@@ -40,13 +40,16 @@
 
         <div class="containerLogin">
             <label for="username"><b>Username</b></label>
-            <input type="text" id="username" placeholder="Enter Username" name="username" required autocomplete="off">
+            <input type="text" id="username" placeholder="Enter Username" class="input-text" name="username" required
+                autocomplete="off">
             <label for="Email"><b>Email</b></label>
-            <input type="email" id="email" placeholder="Enter Email" name="email" required>
+            <input type="email" id="email" placeholder="Enter Email" class="input-email" name="email" required>
             <label for="password"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="password" id="password" required>
+            <input type="password" placeholder="Enter Password" name="password" class="input-password" id="password"
+                required>
             <label for="PasswordConfirm"><b>Re-Enter Password</b></label>
-            <input type="password" placeholder="Re-Enter Password" id="PasswordConfirm" name="PasswordConfirm" required>
+            <input type="password" placeholder="Re-Enter Password" id="PasswordConfirm" class="input-password"
+                name="PasswordConfirm" required>
 
             <button class="green-btn" type="submit">Register</button>
 
