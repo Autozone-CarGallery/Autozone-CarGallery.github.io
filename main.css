@@ -504,16 +504,16 @@ nav .addbutton {
   margin-top: 20px;
 }
 
-th:hover {
+.th1:hover {
   background: #1e669a;
 }
 
-td:hover {
+.td1:hover {
   background: #949ea4;
 }
 
-th,
-td {
+.th1,
+.td1 {
   border: 2px solid #202020;
 }
 .th1,
@@ -524,7 +524,7 @@ td {
 }
 
 
-th {
+.th1 {
   background-color: #66a0d7;
 }
 
