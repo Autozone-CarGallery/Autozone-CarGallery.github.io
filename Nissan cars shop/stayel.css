@@ -1,3 +1,7 @@
+body{
+    background-image: url();
+}
+
 .heading {
     text-align: center;
 }
@@ -170,4 +174,136 @@
 .tank :hover {
     background-image: linear-gradient(to right, #c30000 20%, #ff3737 80%);
     color: #ffff;
+}
+.container-table100 {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 33px 30px;
+}
+
+.wrap-table100 {
+    width: 1170px;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+table td, table th {
+    padding-left: 8px;
+}
+
+table thead tr {
+    height: 60px;
+}
+
+table tbody tr {
+    height: 50px;
+}
+
+table tbody tr:last-child {
+    border: 0;
+}
+
+table td, table th {
+    text-align: left;
+}
+
+table td.l, table th.l {
+    text-align: right;
+}
+
+table td.c, table th.c {
+    text-align: center;
+}
+
+table td.r, table th.r {
+    text-align: center;
+}
+
+.table100-head th {
+    font-family: OpenSans-Regular;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+tbody tr {
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    color: gray;
+    line-height: 1.2;
+    font-weight: normal;
+}
+
+tbody tr:hover {
+    color: #555;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+    table {
+        display: block;
+    }
+
+    table > *, table tr, table td, table th {
+        display: block;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tbody tr {
+        height: auto;
+        padding: 37px 0;
+    }
+
+    table tbody tr td {
+        padding-left: 20px !important;
+        margin-bottom: 24px;
+    }
+
+    table tbody tr td:before {
+        font-family: OpenSans-Regular;
+        font-size: 14px;
+        color: #999;
+        line-height: 1.2;
+        position: absolute;
+        width: 50%;
+        left: 10px;
+        top: 0;
+    }
+
+    table tbody tr td:nth-child(1):before {
+        content: "Company";
+    }
+
+    table tbody tr td:nth-child(2):before {
+        content: "Contact";
+    }
+
+    table tbody tr td:nth-child(3):before {
+        content: "Country";
+    }
+
+    .container-table100 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
