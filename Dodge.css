@@ -250,3 +250,48 @@ th:hover{
 p :hover{
   font-size: 400;
 }
+form {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #7c767655;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff; /* Change label color here */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #b9afaf;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+input[type="submit"] {
+  background-color: #009879;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #006551;
+}
