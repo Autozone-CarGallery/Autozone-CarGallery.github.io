@@ -826,9 +826,30 @@ button.delete {
   background: #fff;
 }
 
+.login-body {
+  background: radial-gradient(circle, #ffffff, #4a4a4a);
+}
 
+.vid-profile {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  margin: 20px;
+}
 
+.login-iframe {
+  width: 70vh;
+  height: 90vh;
+  vertical-align: top;
+}
 
+li.login-list:hover {
+  transform: scale(1.01);
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px
+}
 
 
 
