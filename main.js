@@ -281,7 +281,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 //-------------------------------------------------------Mahmoud part start here-----------------------------------------------------------------------------------------//
 document.addEventListener('DOMContentLoaded', function () {
-    var buyButtons = document.querySelectorAll('.add');
+    var buyButtons = document.querySelectorAll('.buy-button');
     buyButtons.forEach(function (button) {
         button.addEventListener('click', function () {
             alert('Bought Successfully!');
@@ -290,7 +290,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const spans = document.querySelectorAll('td span');
+    const spans = document.querySelectorAll('td');
 
     spans.forEach(span => {
         span.addEventListener('mouseover', function () {
@@ -307,21 +307,25 @@ document.addEventListener('DOMContentLoaded', function () {
 function f() {
     console.log("Submit button clicked!");
 
-    const carName = document.getElementById("car-name").value;
-    const carModel = document.getElementById("car-model").value;
-    const comments = document.getElementById("comments").value;
+    const Name = document.getElementById("name").value;
+    const E_mail = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
 
 
-    localStorage.setItem("carName", carName);
-    localStorage.setItem("carModel", carModel);
-    localStorage.setItem("comments", comments);
+    localStorage.setItem("Name", Name);
+    localStorage.setItem("E_mail", E_mail);
+    localStorage.setItem("message", message);
 
 
-    document.getElementById("car-name").value = "";
-    document.getElementById("car-model").value = "";
-    document.getElementById("comments").value = "";
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
 
 
     alert("Submitted successfully!");
+}
+function m() {
+    alert("This service isn't available is your region.");
+
 }
 
