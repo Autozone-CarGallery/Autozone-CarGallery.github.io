@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nissan Sunny</title>
     <link rel="stylesheet" href="stayel.css">
+    <script src="Nissan cars shop/main.js"></script>
 </head>
 
 <body>
@@ -17,7 +18,8 @@
     <div class="container">
         <div class="main_content">
             <div class="content">
-                <h1>Nissan Sunny <br> <a href="" class="btn"> $16,800 </a> </h1>
+                <h1>Sunny<br> <div class="btn"> <button onclick="Buy_Alert()">16,800$</button> </div> </h1>
+                <p id="buy_confirm"></p>
                 <p>The Nissan Sunny blends modern design, excellent performance and stylish interiors to ignite a
                     one-of-a-kind experience that is truly magnetic. The driving experience lives up in every measure to
                     the experience promised</p>
@@ -47,6 +49,12 @@
 
         </div>
     </div>
+    <form>
+        <textarea name="message" rows="10" cols="30">Have you ride this car before ?
+You can write a comment about your experience !</textarea>
+        <br><br>
+        <input type="submit" onclick="Comment_alert()">
+    </form>
 </body>
 
 </html>

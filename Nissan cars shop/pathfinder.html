@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nissan Pathfinder</title>
     <link rel="stylesheet" href="stayel.css">
+    <script src="Nissan cars shop/main.js"></script>
 </head>
 
 <body>
@@ -17,7 +18,8 @@
     <div class="container">
         <div class="main_content">
             <div class="content">
-                <h1>Nissan Pathfinder <br> <a href="" class="btn"> $36,080 </a> </h1>
+                <h1>Pathfinder<br> <div class="btn"> <button onclick="Buy_Alert()">36,080 $</button> </div> </h1>
+                <p id="buy_confirm"></p>
                 <p>When adventure calls, answer with the 2024 Nissan Pathfinder. Whether it’s the thrill of new
                     experiences or new destinations — or both — this mid-size SUV comes ready to play with room for up
                     to 8 passengers, an expansive cargo capacity, and advanced available 4x4 capability</p>
@@ -47,6 +49,12 @@
 
         </div>
     </div>
+    <form>
+        <textarea name="message" rows="10" cols="30">Have you ride this car before ?
+You can write a comment about your experience !</textarea>
+        <br><br>
+        <input type="submit" onclick="Comment_alert()">
+    </form>
 </body>
 
 </html>
