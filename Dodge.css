@@ -121,11 +121,13 @@ nav .addbutton {
   height: 400px;
   float: left;
 }
+
 .charp2 {
   width: 650px;
   height: 400px;
   float: left;
 }
+
 .charp3 {
   width: 650px;
   height: 400px;
@@ -139,6 +141,7 @@ nav .addbutton {
   padding: 20px;
   padding-left: 50;
 }
+
 .duarngo {
   width: 80%;
   left: 15%;
@@ -146,6 +149,7 @@ nav .addbutton {
   padding: 20px;
   padding-left: 50;
 }
+
 .challenger {
   width: 80%;
   left: 15%;
@@ -153,6 +157,7 @@ nav .addbutton {
   padding: 20px;
   padding-left: 50;
 }
+
 .Hornet {
   width: 80%;
   left: 15%;
@@ -239,38 +244,46 @@ p {
 table {
   color: #dddddd;
 }
-.charp2{
+
+.charp2 {
   width: 750px;
   height: 350px;
-  float:left;
+  float: left;
 }
-.challenger{
+
+.challenger {
   width: 80%;
-  left :15%;
+  left: 15%;
   top: 20%;
   padding: 20px;
   padding-left: 50;
 }
-.charp3:hover{
+
+.charp3:hover {
   background-color: #009879;
   border-radius: 20px;
-} 
-.charp2:hover{
+}
+
+.charp2:hover {
   background-color: #009879;
   border-radius: 20px;
-} 
-.charp1:hover{
+}
+
+.charp1:hover {
   background-color: #009879;
   border-radius: 20px;
-} 
-th:hover{
+}
+
+th:hover {
   background-color: #009879;
   border-radius: 20PX;
 }
-p :hover{
+
+p :hover {
   font-size: 400;
 }
-form {
+
+form.form-df {
   max-width: 400px;
   margin: 50px auto;
   background-color: #7c767655;
@@ -282,7 +295,8 @@ form {
 label {
   display: block;
   margin-bottom: 5px;
-  color: #ffffff; /* Change label color here */
+  color: #ffffff;
+  /* Change label color here */
 }
 
 input[type="text"],
@@ -315,6 +329,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #006551;
 }
+
 .my-list {
   list-style-type: none;
   padding: 0;
@@ -328,7 +343,8 @@ input[type="submit"]:hover {
   padding: 10px;
   margin-bottom: 5px;
   border-radius: 5px;
-  cursor: pointer; /* Add cursor pointer */
+  cursor: pointer;
+  /* Add cursor pointer */
 }
 
 /* Add hover effect */
@@ -337,16 +353,18 @@ input[type="submit"]:hover {
 }
 
 .target-div {
-    margin-top: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
 }
+
 .iframe-container {
-  position:relative;
+  position: relative;
   width: 100%;
-  padding-bottom: 30%; 
+  padding-bottom: 30%;
 }
+
 .iframe-container iframe {
   position: absolute;
   top: 0;
