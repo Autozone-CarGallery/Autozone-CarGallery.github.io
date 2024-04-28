@@ -409,9 +409,10 @@ nav .addbutton {
 }
 
 .car {
+  background-color: #ececec;
   width: 300px;
   padding: 20px;
-  border: 2rem solid #ccc;
+  border: 1.8rem solid #ccc;
   border-radius: 5px;
   margin: 30px;
 }
@@ -425,9 +426,13 @@ nav .addbutton {
 
 .backward-btn,
 .forward-btn {
-  font-size: 20px;
-  padding: 5px 10px;
+  background: #393e46;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  padding: 5px 8px;
   cursor: pointer;
+  height:  180px;
 }
 
 .current-image {
