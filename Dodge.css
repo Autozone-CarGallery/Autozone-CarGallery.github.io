@@ -121,8 +121,39 @@ nav .addbutton {
   height: 400px;
   float: left;
 }
+.charp2 {
+  width: 650px;
+  height: 400px;
+  float: left;
+}
+.charp3 {
+  width: 650px;
+  height: 400px;
+  float: left;
+}
 
 .charger {
+  width: 80%;
+  left: 15%;
+  top: 20%;
+  padding: 20px;
+  padding-left: 50;
+}
+.duarngo {
+  width: 80%;
+  left: 15%;
+  top: 20%;
+  padding: 20px;
+  padding-left: 50;
+}
+.challenger {
+  width: 80%;
+  left: 15%;
+  top: 20%;
+  padding: 20px;
+  padding-left: 50;
+}
+.Hornet {
   width: 80%;
   left: 15%;
   top: 20%;
@@ -220,26 +251,15 @@ table {
   padding: 20px;
   padding-left: 50;
 }
-.duarngo{
-  width: 80%;
-  left :15%;
-  top: 20%;
-  padding: 20px;
-  padding-left: 50;
-}
-.charp3{
-  width: 550px;
-  height: 400px;
-  float:left;
-}
-.Hornet{
-  width: 80%;
-  left :15%;
-  top: 20%;
-  padding: 20px;
-  padding-left: 50;
-}
 .charp3:hover{
+  background-color: #009879;
+  border-radius: 20px;
+} 
+.charp2:hover{
+  background-color: #009879;
+  border-radius: 20px;
+} 
+.charp1:hover{
   background-color: #009879;
   border-radius: 20px;
 } 
@@ -294,4 +314,43 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #006551;
+}
+.my-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+/* Style list items */
+.my-list li {
+  background-color: #009879;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer; /* Add cursor pointer */
+}
+
+/* Add hover effect */
+.my-list li:hover {
+  background-color: #006551;
+}
+
+.target-div {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+.iframe-container {
+  position:relative;
+  width: 100%;
+  padding-bottom: 30%; 
+}
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

@@ -8,7 +8,6 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="Dodge.css">
     <script src="main.js"></script>
-    <script src="Dodge&Ford.js"></script>
 </head>
 
 <body>
@@ -28,22 +27,24 @@
         <a href="About Us Page/aboutus.html"><i class=" bx bxs-info-circle"></i>About</a>
         <a href="shop.html"><button class="addbutton"><i class="bx bx-cart-add"></i>Shop</button></a>
     </nav>
-
     <div id="dodgevid">
         <video width="100%" height="100%" autoplay muted>
             <source src="Cars/Dodge/videoplayback.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+        <div class="iframe-container">
+            <iframe src="https://en.wikipedia.org/wiki/Dodge" frameborder="0" ></iframe>
+        </div>
     </div>
-    <iframe src="" frameborder="0"></iframe>
-
-    <div id="dodgevid">
-        <video width="100%" height="100%" autoplay muted>
-            <source src="Cars/Dodge/videoplayback.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
     </div>
-    <iframe src="" frameborder="0"></iframe>
+    <div class="item-container">
+        <ul class="my-list">
+            <li onclick="scrollToDiv('charger')">Dodge charger</li>
+            <li onclick="scrollToDiv('challenger')">Dodge challenger</li>
+            <li onclick="scrollToDiv('duarngo')">Dodge Durango</li>
+            <li onclick="scrollToDiv('Hornet')">Dodge Hornet</li>
+        </ul>
+    </div>
     <div class="cars-container">
         <div class="charger">
             <img src="Cars/Dodge/Dodge-Charger-PNG-Free-Download.png" class="charp1" alt="car image">
@@ -58,7 +59,7 @@
                 it is. And while the world shifts to alternative energy, the Charger keeps on chugging along as a sedan
                 version of the coupe-bodied, gasoline-fired Challenger. One day cars like the Charger will be against
                 all the rules, but for now this V-8-powered sedan remains loud and proud.</p>
-            <button class="my-button" data-car-name="Dodge Charger">Add to Cart</button>
+            <button class="my-button" data-car-name="Dodge Charger"  onclick="addToCart(this.getAttribute('data-car-name'))">Buy now</button>
             <table class="content-table">
                 <thead>
                     <tr>
@@ -68,19 +69,19 @@
                         <th>Engine Type and Required Fuel</th>
                         <th>From 0 t0 100 in</th>
                         <th>Maxmium torqe</th>
-                        <th>Price(EG)</th>
+                        <th>Price</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th>Dodge charger (2023)</th>
+                        <th>Dodge Charger (2023)</th>
                         <th>807 horsepower</th>
-                        <th>ُ+3013CC</th>
+                        <th>+3013 CC</th>
                         <th>Regular Unleaded V-6</th>
-                        <th>204 mph</th>
-                        <th>707LB-FT OF TORQUE</th>
-                        <th>Price(EG)</th>
-                    </tr>
+                        <th>0 to 100 in 2.9 seconds</th>
+                        <th>650 LB-FT OF TORQUE</th>
+                        <th>$45,000</th>
+                    </tr>                    
                 </tbody>
             </table>
         </div>
@@ -99,7 +100,7 @@
             will be enough to trigger nostalgic feelings for the vintage Dodge pony cars with which it shares a
             name. Enthusiast drivers will find modern versions of the Chevrolet Camaro and the Ford Mustang more
             capable on twisty roads and racetracks, but the Challenger’s old-school charm is undeniable. </p>
-        <button class="my-button" data-car-name="Dodge Challenger">Add to Cart</button>
+            <button class="my-button" data-car-name="Dodge Challenger"  onclick="addToCart(this.getAttribute('data-car-name'))">Buy now</button>
         <table class="content-table">
             <thead>
                 <tr>
@@ -109,19 +110,19 @@
                     <th>Engine Type and Required Fuel</th>
                     <th>From 0 t0 100 in</th>
                     <th>Maxmium torqe</th>
-                    <th>Price(EG)</th>
+                    <th>Price</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th>Dodge charger (2023)</th>
+                    <th>Dodge Challenger(2023)</th>
                     <th>807 horsepower</th>
-                    <th>ُ+3013CC</th>
+                    <th>+3013 CC</th>
                     <th>Regular Unleaded V-6</th>
-                    <th>204 mph</th>
-                    <th>707LB-FT OF TORQUE</th>
-                    <th>Price(EG)</th>
-                </tr>
+                    <th>0 to 100 in 3.5 seconds</th>
+                    <th>717 LB-FT OF TORQUE</th>
+                    <th>$50,000</th>
+                </tr>                
             </tbody>
         </table>
     </div>
@@ -132,7 +133,7 @@
             impressive. After all, not many SUVs can hit 60 mph in under 5 seconds and tow up to 8,700 pounds. But what
             you get in capability you lack in refinement. As well equipped as the Durango might be, you are constantly
             reminded this is one of the older platforms on the market.</p>
-        <button class="my-button" data-car-name="Dodge Durango">Add to Cart</button>
+            <button class="my-button" data-car-name="Dodge duarngo"  onclick="addToCart(this.getAttribute('data-car-name'))">Buy now</button>
         <table class="content-table">
             <thead>
                 <tr>
@@ -147,25 +148,27 @@
             </thead>
             <tbody>
                 <tr>
-                    <th>Dodge charger (2023)</th>
-                    <th>807 horsepower</th>
-                    <th>ُ+3013CC</th>
-                    <th>Regular Unleaded V-6</th>
-                    <th>204 mph</th>
-                    <th>707LB-FT OF TORQUE</th>
-                    <th>Price(EG)</th>
-                </tr>
+                    <th>Dodge Durango (2023)</th>
+                    <th>475 horsepower</th>
+                    <th>5654 CC</th>
+                    <th>Regular Unleaded V-8</th>
+                    <th>0 to 100 in 6.2 seconds</th>
+                    <th>470 LB-FT OF TORQUE</th>
+                    <th>$55,000</th>
+                </tr>                
             </tbody>
         </table>
     </div>
     <div class="Hornet">
         <img src="Cars/Dodge/ac3cddad-3888-43cc-8833-d3306c5fc3df.webp" class="charp3" alt="car image">
-        <h1>Dodge duarngo</h1>
-        <p>The Durango might not appeal to a broad audience, but its performance and practicality are certainly
-            impressive. After all, not many SUVs can hit 60 mph in under 5 seconds and tow up to 8,700 pounds. But what
-            you get in capability you lack in refinement. As well equipped as the Durango might be, you are constantly
-            reminded this is one of the older platforms on the market.</p>
-        <button class="my-button" data-car-name="Dodge Hornet">Add to Cart</button>
+        <h1>Dodge Hornet</h1>
+        <p>The Dodge Hornet is an extra-small SUV that packs a particularly potent punch for a vehicle its size. Where other subcompact sport-utes might be luck
+            y to exceed 150 horsepower, 
+            the Hornet makes a whopping 268 horsepower in base form. The Hornet is based on the same architecture that underpins the Alfa Romeo 
+            Tonale, and it inherits a similar plug-in hybrid drivetra
+            in option pumping out 288 horsepower and 383 lb-ft of torque available in 
+            the new R/T model. All Hornet SUVs come standard with all-wheel drive and a healthy assortment of tech and convenience features.</p>
+            <button class="my-button" data-car-name="Dodge Hornet"  onclick="addToCart(this.getAttribute('data-car-name'))">Buy now</button>
         <table class="content-table">
             <thead>
                 <tr>
@@ -175,24 +178,33 @@
                     <th>Engine Type and Required Fuel</th>
                     <th>From 0 t0 100 in</th>
                     <th>Maxmium torqe</th>
-                    <th>Price(EG)</th>
+                    <th>Price</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th>Dodge charger (2023)</th>
-                    <th>807 horsepower</th>
-                    <th>ُ+3013CC</th>
-                    <th>Regular Unleaded V-6</th>
-                    <th>204 mph</th>
-                    <th>707LB-FT OF TORQUE</th>
-                    <th>Price(EG)</th>
-                </tr>
+                    <th>Dodge Hornet (2023)</th>
+                    <th>600 horsepower</th>
+                    <th>5000 CC</th>
+                    <th>Premium Unleaded V-8</th>
+                    <th>0 to 100 in 4.0 seconds</th>
+                    <th>550 LB-FT OF TORQUE</th>
+                    <th>$60,000</th>
+                </tr>                
             </tbody>
         </table>
     </div>
     </div>
-    </div>
+    <script>
+        function scrollToDiv(className) {
+            var targetDiv = document.querySelector('.' + className);
+            if (targetDiv) {
+                targetDiv.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>    
+</div>
+
     <divc lass="addtional information">
         <form action="/submit" method="post">
             <label for="name">Name:</label><br>
