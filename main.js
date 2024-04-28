@@ -48,7 +48,7 @@ function CheckInputs() {
         return false;
 
     }
-    if (username !== savedusername || password !== savedpassword) {  // Use secure comparison for hashed password
+    if (username !== savedusername || password !== savedpassword) {
         const errorMessage = document.getElementById("ErrorMessage");
         const show = document.querySelector('.Alert');
         show.innerHTML = "Invalid username or password.";
@@ -187,6 +187,43 @@ function No() {
 
 
 }
+
+function searchBrand() {
+    var keyword = document.getElementById("searchInput").value.toLowerCase();
+
+    var Brands = {
+        "bmw": "https://autozone-cargallery.github.io/BMW.html",
+        "audi": "https://autozone-cargallery.github.io/Audi/Audi.html",
+        "mercedes": "https://autozone-cargallery.github.io/Mercedes.html",
+        "alfa romeo": "#",
+        "ford": "#",
+        "kia": "https://autozone-cargallery.github.io/Desoky/Kia.html",
+        "nissan": "https://autozone-cargallery.github.io/Nissan%20cars%20shop/Nissan%20cars.html",
+        "dodge": "https://autozone-cargallery.github.io/Dodge.html",
+        "chevrolet": "https://autozone-cargallery.github.io/Cars/Chevy%20cars/Chevrolet.html",
+        "lamborghini": "https://autozone-cargallery.github.io/Cars/Lamborgini%20Cars/Lamborghini.html",
+        "toyota": "https://autozone-cargallery.github.io/Toyota/Touota.html",
+        "volvo": "#",
+
+    };
+
+    // Check if the word exists in the mappings
+    if (Brands.hasOwnProperty(keyword)) {
+        window.location.href = Brands[keyword];
+    } else {
+        alert("Check spelling or else this brand doesn't exist on website....");
+    }
+
+}
+
+
+
+
+
+
+
+
+
 //-------------------------------------------------------Mohamed hossam part start here-----------------------------------------------------------------------------------------//
 let addToCartButtons = document.querySelectorAll(".add-to-cart");
 
@@ -211,7 +248,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ["Cars/BMW/X7/2023-bmw-x7-xdrive-40i144-641c5b4169eb2.jpg", "Cars/BMW/X7/2023-bmw-x7-xdrive-40i147-641c5b438a1cc.jpg", "Cars/BMW/X7/2023-bmw-x7-xdrive-40i128-641c5b39edaad.jpg", "Cars/BMW/X7/2023-bmw-x7-xdrive-40i132-641c5b3c33cbc.jpg", "Cars/BMW/X7/2023-bmw-x7-xdrive-40i101-641c5b2d70bc9.jpg", "Cars/BMW/X7/2023-bmw-x7-xdrive-40i115-641c5b31db5bb.jpg"],
         ["Cars/Mercedes/CLA/1.jpg", "Cars/Mercedes/CLA/2.webp", "Cars/Mercedes/CLA/3.jpg", "Cars/Mercedes/CLA/4.jpg"],
         ["Cars/Mercedes/A_Class/3.jpg", "Cars/Mercedes/A_Class/4.jpg", "Cars/Mercedes/A_Class/5.jpg", "Cars/Mercedes/A_Class/6.jpg", "Cars/Mercedes/A_Class/1.jpg", "Cars/Mercedes/A_Class/2.jpg", "Cars/Mercedes/A_Class/7.jpg", "/Cars/Mercedes/A_Class/8.jpg"],
-        ["Cars/Mercedes/B_Class/640px-Mercedes-Benz_B-Class.jpg", "Cars/Mercedes/B_Class/2.jpg", "Cars/Mercedes/B_Class/Mercedes-Benz_B-Class_at_the_Frankfurt_Motor_Show_IAA_2011_(6147726918).jpg"],
+        ["Cars/Mercedes/B_Class/1.jpg", "Cars/Mercedes/B_Class/2.jpg", "Cars/Mercedes/B_Class/3.jpg"],
         ["Cars/Mercedes/C_Class/1.jpg", "Cars/Mercedes/C_Class/2.jpg", "Cars/Mercedes/C_Class/3.jpg", "Cars/Mercedes/C_Class/4.jpg", "Cars/Mercedes/C_Class/5.jpg", "Cars/Mercedes/C_Class/6.jpg", "Cars/Mercedes/C_Class/7.jpg", "Cars/Mercedes/C_Class/8.jpg"],
         ["Cars/Mercedes/E_Class/4.jpg", "Cars/Mercedes/E_Class/5.jpg", "Cars/Mercedes/E_Class/6.jpg", "Cars/Mercedes/E_Class/7.jpg", "Cars/Mercedes/E_Class/1.jpg", "Cars/Mercedes/E_Class/2.jpg", "Cars/Mercedes/E_Class/3.jpg", "Cars/Mercedes/E_Class/8.jpg", "Cars/Mercedes/E_Class/9.jpg"],
         ["Cars/Mercedes/S_Class/2022-mercedes-benz-s500-4matic-101-1642184014.jpg", "Cars/Mercedes/S_Class/2022-mercedes-benz-s500-4matic-102-1642184016.jpg", "Cars/Mercedes/S_Class/2022-mercedes-benz-s500-4matic-103-1642184013.jpg", "Cars/Mercedes/S_Class/2022-mercedes-benz-s500-4matic-114-1642184019.jpg", "Cars/Mercedes/S_Class/2022-mercedes-benz-s500-4matic-124-1642184029.jpg"],
