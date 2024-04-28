@@ -280,6 +280,23 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 //-------------------------------------------------------Mahmoud part start here-----------------------------------------------------------------------------------------//
+function searchCars() {
+
+    var input, filter, carSections, i, h2, txtValue;
+    input = document.getElementById("searchInput");
+    filter = input.value.toUpperCase();
+    var carSections = document.querySelectorAll(".individual-car");
+    for (i = 0; i < carSections.length; i++) {
+        h2 = carSections[i].querySelector("h2");
+        txtValue = h2.textContent || h2.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            carSections[i].style.display = "";
+        } else {
+            carSections[i].style.display = "none";
+        }
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     var buyButtons = document.querySelectorAll('.buy-button');
     buyButtons.forEach(function (button) {
@@ -340,3 +357,8 @@ function Buy_Alert() {
 function Comment_alert() {
     alert("Thank you for your Comment, have a nice day!")
 }
+
+
+
+
+

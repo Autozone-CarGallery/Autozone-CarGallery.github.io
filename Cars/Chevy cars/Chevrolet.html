@@ -7,7 +7,6 @@
     <title>Chevrolet</title>
     <link rel="stylesheet" href="Chevrolet.css">
     <script src="../../main.js"></script>
-    <script src="searchbar.js"></script>
     <link rel="icon" href="Chevrolet-Logo.png">
 </head>
 
@@ -28,7 +27,7 @@
                 </ul>
             </nav>
             <div class="search-bar">
-                <input type="text" id="searchInput" placeholder="Search...">
+                <input type="text" id="searchInput" onchange="searchCars()" placeholder="Search..." autocomplete="off">
                 <button onclick="searchCars()">Search</button>
             </div>
         </div>
@@ -47,7 +46,7 @@
     <div class="container">
         <h2 class="section-title">Latest Cars Added</h2>
         <div class="car-grid">
-            <div class="car">
+            <div class="car-CL">
                 <img src="chevycamaro.jpg" alt="Lamborghini Car">
                 <h3>Chevrolet Camaro</h3>
                 <p>Year: 2022</p>

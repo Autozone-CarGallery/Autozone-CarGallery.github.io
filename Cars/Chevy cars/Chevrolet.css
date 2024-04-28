@@ -123,7 +123,7 @@ body {
     gap: 30px;
 }
 
-.car {
+.car-CL {
     background-color: #111111;
     /* Darker background color for cars */
     padding: 20px;
@@ -131,18 +131,18 @@ body {
     text-align: center;
 }
 
-.car img {
+.car-CL img {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
-.car h3 {
+.car-CL h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-.car p {
+.car-CL p {
     margin-bottom: 10px;
 }
 
