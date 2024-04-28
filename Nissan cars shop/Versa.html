@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nissan Versa</title>
     <link rel="stylesheet" href="stayel.css">
+    <script src="Nissan cars shop/main.js"></script>
 </head>
 
 <body>
@@ -17,7 +18,8 @@
     <div class="container">
         <div class="main_content">
             <div class="content">
-                <h1>Nissan Versa<br> <a href="" class="btn"> $21,840 </a> </h1>
+                <h1>Versa<br> <div class="btn"> <button onclick="Buy_Alert()">21,840$</button> </div> </h1>
+                <p id="buy_confirm"></p>
                 <p>Rethink what's possible with the 2024 Nissan Versa. Nimble in the city and adaptable everywhere else,
                     this sedan keeps up with life on the go. Its sense of style is anything but basic. Its standard
                     safety is next-level. Plus, with impressive connectivity and fuel economy, Versa helps you make
@@ -48,6 +50,12 @@
 
         </div>
     </div>
+    <form>
+        <textarea name="message" rows="10" cols="30">Have you ride this car before ?
+You can write a comment about your experience !</textarea>
+        <br><br>
+        <input type="submit" onclick="Comment_alert()">
+    </form>
 </body>
 
 </html>

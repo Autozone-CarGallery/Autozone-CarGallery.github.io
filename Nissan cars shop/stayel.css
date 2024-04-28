@@ -97,7 +97,7 @@
     letter-spacing: 2px;
 }
 
-.container .main_content .content .btn {
+.container .main_content .content .btn button {
     display: inline-block;
     padding: 10px 15px;
     font-size: 17px;
@@ -171,3 +171,66 @@
     background-image: linear-gradient(to right, #c30000 20%, #ff3737 80%);
     color: #ffff;
 }
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+table thead tr {
+    height: 60px;
+}
+
+table tbody tr {
+    height: 50px;
+}
+
+table td, table th {
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+tbody tr {
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    color: gray;
+    line-height: 1.2;
+    font-weight: normal;
+}
+
+tbody tr:hover {
+    color: #555;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    font-family: Arial, sans-serif;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049; 
+  }
