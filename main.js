@@ -324,8 +324,4 @@ function f() {
 
     alert("Submitted successfully!");
 }
-function m() {
-    alert("This service isn't available is your region.");
-
-}
 
