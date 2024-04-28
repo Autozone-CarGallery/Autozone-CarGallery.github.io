@@ -203,11 +203,9 @@ function searchBrand() {
         "chevrolet": "https://autozone-cargallery.github.io/Cars/Chevy%20cars/Chevrolet.html",
         "lamborghini": "https://autozone-cargallery.github.io/Cars/Lamborgini%20Cars/Lamborghini.html",
         "toyota": "https://autozone-cargallery.github.io/Toyota/Touota.html",
-        "volvo": "#",
+        "volvo": "https://autozone-cargallery.github.io/Volvo.html",
 
     };
-
-    // Check if the word exists in the mappings
     if (Brands.hasOwnProperty(keyword)) {
         window.location.href = Brands[keyword];
     } else {
@@ -395,7 +393,15 @@ function Comment_alert() {
     alert("Thank you for your Comment, have a nice day!")
 }
 
+//-------------------------------------------------------Desoky part start here-----------------------------------------------------------------------------------------//
 
 
-
+function toggleCarsSection() {
+    var carsSection = document.getElementsByClassName("cars-container");
+    if (carsSection.style.display === "none") {
+        carsSection.style.display = "flex";
+    } else {
+        carsSection.style.display = "none";
+    }
+}
 

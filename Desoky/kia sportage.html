@@ -1,98 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Information</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            text-align: center;
-        }
-        h1 {
-            margin-top: 30px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        .car-info {
-            margin-top: 20px;
-            text-align: left;
-        }
-        table{
-            text-align: center;
-        }
-    </style>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../main.js"></script>
+    <link rel="stylesheet" href="../main.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>Car Information</h1>
-        <video  autoplay loop>
+    <nav>
+        <a href="../index.html"><img src="../main_Photos/LOGO.png"></a>
+        <div class="search">
+            <button class="material-symbols-outlined" onclick="searchBrand()">search</button>
+            <input type="search" class="search-input" onchange="searchBrand()" id="searchInput" placeholder="search..."
+                autocomplete="off">
+        </div>
+        <a href="../index.html"><i class="bx bxs-home"></i>Home</a>
+        <a href="Profile.html" onclick="return CheckLogin()"><i class='bx bxs-user'></i>Profile</a>
+        <a href="../index.html#service"><i class="bx bxs-cog"></i>Services</a>
+        <a href="../About Us Page/aboutus.html"><i class=" bx bxs-info-circle"></i>About</a>
+        <a href="../shop.html"><button class="addbutton"><i class="bx bx-cart-add"></i>Shop</button></a>
+    </nav>
+    <div class="container-VK">
+        <h1 class="VK-info">Car Information</h1>
+        <video autoplay loop class="car-photo">
             <source src="video/The Kia Sportage _ Inspires Attention _ Kia(720P_HD).mp4">
         </video>
-       <img src="imgs/kia sportage/19a2bf5c-95fe-43fb-8f35-e2f3c1b7df38.jpeg" alt="Car Photo">
-       <img src="imgs/kia sportage/5ccbfb2b-1a01-4ed4-94d3-85f64bd163ef.jpeg" alt="Car Photo">
-       <img src="imgs/kia sportage/7f6b8bf1-f977-4cd7-9483-40658f895057.jpeg" alt="Car Photo">
-       <p> Kia Sportage is a compact SUV that offers a comfortable and versatile driving experience. Since there are different model years and trim levels, the specifications can vary. I'll provide a general overview of the 2022 Kia Sportage, which was one of the latest models available at the time of my last update in January 2022. 
-
-        *Speed and Performance:*
-        - *Engine options*: Typically, the Kia Sportage offers a choice between a 2.4-liter 4-cylinder engine and a turbocharged 2.0-liter 4-cylinder engine.
-            - The 2.4-liter engine produces around 181 horsepower and 175 lb-ft of torque.
-            - The turbocharged 2.0-liter engine generates around 240 horsepower and 260 lb-ft of torque.
-        - *Top speed*: The top speed of the Kia Sportage can vary by model and trim but generally falls within the range of 110-120 mph.
-        - *Transmission*: A 6-speed automatic transmission is commonly available.
-        
-        *Interior:*
-        - *Seating*: The Kia Sportage typically offers seating for five passengers. The seats are designed for comfort, with options for power-adjustable and heated/ventilated seats in higher trims.
-        - *Cargo space*: The cargo area provides ample space for luggage and other items. The rear seats can be folded down for additional cargo space.
-        - *Technology*: Depending on the trim, the Kia Sportage comes equipped with an 8-inch touchscreen infotainment system, Bluetooth connectivity, Apple CarPlay, and Android Auto compatibility. Navigation, premium audio systems, and other tech features may be available on higher trims.
-        - *Safety features*: The Kia Sportage is often equipped with a variety of safety features such as lane departure warning, blind-spot monitoring, forward collision warning, and automatic emergency braking.
-        
-        *Car Type:*
-        - The Kia Sportage is classified as a compact SUV, which offers a balance of performance, versatility, and efficiency.
-        - It is known for its smooth ride, comfortable cabin, and user-friendly technology.
-        
-        These are general specifications for the Kia Sportage based on the 2022 model year. For the most up-to-date and specific details, please check with Kia directly or visit their website.</p>
-
+        <img class="car-photo" src="imgs/kia sportage/19a2bf5c-95fe-43fb-8f35-e2f3c1b7df38.jpeg" alt="Car Photo">
+        <img class="car-photo" src="imgs/kia sportage/5ccbfb2b-1a01-4ed4-94d3-85f64bd163ef.jpeg" alt="Car Photo">
+        <img class="car-photo" src="imgs/kia sportage/7f6b8bf1-f977-4cd7-9483-40658f895057.jpeg" alt="Car Photo">
         <div class="car-info">
-    </div> 
-    <table border="1" align="center">
-        <thead>
-            <tr>
-                <td>specifications</td>
-                <td>car specifications</td>
-            </tr>
-        </thead>
-        <tr>
-        <td>year</td>
-        <td>2024</td>
-        </tr>
-        <tbody>   
-            <tr>
-            <td>Color</td>
-            <td>olive</td>
-                <tr>
-                <td>Engine</td>
-                <td>2.5L Inline-4</td>
-            </tr>
-            <tr>
-            <td>transmission</td>
-            <td>automatic</td>
-            <tr>
-            <td>price</td>
-            <td>$25,000</td>
-            </tr>
-            </tr>
-        </tbody>
+            <p> Kia Sportage is a compact SUV that offers a comfortable and versatile driving experience. Since there
+                are different model years and trim levels, the specifications can vary. I'll provide a general overview
+                of the 2022 Kia Sportage, which was one of the latest models available at the time of my last update in
+                January 2022.
 
-    </table>
+                *Speed and Performance:*
+                - *Engine options*: Typically, the Kia Sportage offers a choice between a 2.4-liter 4-cylinder engine
+                and a turbocharged 2.0-liter 4-cylinder engine.
+                - The 2.4-liter engine produces around 181 horsepower and 175 lb-ft of torque.
+                - The turbocharged 2.0-liter engine generates around 240 horsepower and 260 lb-ft of torque.
+                - *Top speed*: The top speed of the Kia Sportage can vary by model and trim but generally falls within
+                the range of 110-120 mph.
+                - *Transmission*: A 6-speed automatic transmission is commonly available.
+
+                *Interior:*
+                - *Seating*: The Kia Sportage typically offers seating for five passengers. The seats are designed for
+                comfort, with options for power-adjustable and heated/ventilated seats in higher trims.
+                - *Cargo space*: The cargo area provides ample space for luggage and other items. The rear seats can be
+                folded down for additional cargo space.
+                - *Technology*: Depending on the trim, the Kia Sportage comes equipped with an 8-inch touchscreen
+                infotainment system, Bluetooth connectivity, Apple CarPlay, and Android Auto compatibility. Navigation,
+                premium audio systems, and other tech features may be available on higher trims.
+                - *Safety features*: The Kia Sportage is often equipped with a variety of safety features such as lane
+                departure warning, blind-spot monitoring, forward collision warning, and automatic emergency braking.
+
+                *Car Type:*
+                - The Kia Sportage is classified as a compact SUV, which offers a balance of performance, versatility,
+                and efficiency.
+                - It is known for its smooth ride, comfortable cabin, and user-friendly technology.
+
+                These are general specifications for the Kia Sportage based on the 2022 model year. For the most
+                up-to-date and specific details, please check with Kia directly or visit their website.</p>
+
+        </div>
+        <table border="1" align="center">
+            <thead>
+                <tr>
+                    <td>specifications</td>
+                    <td>car specifications</td>
+                </tr>
+            </thead>
+            <tr>
+                <td>year</td>
+                <td>2024</td>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>Color</td>
+                    <td>olive</td>
+                <tr>
+                    <td>Engine</td>
+                    <td>2.5L Inline-4</td>
+                </tr>
+                <tr>
+                    <td>transmission</td>
+                    <td>automatic</td>
+                <tr>
+                    <td>price</td>
+                    <td>$25,000</td>
+                </tr>
+                </tr>
+            </tbody>
+
+        </table>
 
 </body>
+
 </html>

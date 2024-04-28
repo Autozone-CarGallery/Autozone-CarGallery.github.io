@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Information</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            text-align: center;
-        }
-        h1 {
-            margin-top: 30px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        .car-info {
-            margin-top: 20px;
-            text-align: left;
-        }
-    </style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../main.js"></script>
+    <link rel="stylesheet" href="../main.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>Car Information</h1>
-        <video autoplay loop>
+    <nav>
+        <a href="../index.html"><img src="../main_Photos/LOGO.png"></a>
+        <div class="search">
+            <button class="material-symbols-outlined" onclick="searchBrand()">search</button>
+            <input type="search" class="search-input" onchange="searchBrand()" id="searchInput" placeholder="search..."
+                autocomplete="off">
+        </div>
+        <a href="../index.html"><i class="bx bxs-home"></i>Home</a>
+        <a href="Profile.html" onclick="return CheckLogin()"><i class='bx bxs-user'></i>Profile</a>
+        <a href="../index.html#service"><i class="bx bxs-cog"></i>Services</a>
+        <a href="../About Us Page/aboutus.html"><i class=" bx bxs-info-circle"></i>About</a>
+        <a href="../shop.html"><button class="addbutton"><i class="bx bx-cart-add"></i>Shop</button></a>
+    </nav>
+    <div class="container-VK">
+        <h1 class="VK-info">Car Information</h1>
+        <video autoplay loop class="car-photo">
             <source src="video/Pushing limits. One car at a time - This is Kia(720P_HD).mp4">
         </video>
-        <img src="imgs/kia ev9/kia-ev9-concept-front-three-quarter-bright.jpg" alt="Car Photo">
-        <img src="imgs/kia ev9/kia-ev9-concept-three-quarters-above.jpg">
-        <img src="imgs/kia ev9/kia-ev9-concept-low-angle-corner-front.jpg">
-        <img src="imgs/kia ev9/kia-ev9-reveal-2024.jpg">
-        <img src="imgs/kia ev9/kia-ev9-concept_167402403130.jpg">
-        <p> </p>
+        <img class="car-photo" src="imgs/kia ev9/kia-ev9-concept-front-three-quarter-bright.jpg" alt="Car Photo">
+        <img class="car-photo" src="imgs/kia ev9/kia-ev9-concept-three-quarters-above.jpg">
+        <img class="car-photo" src="imgs/kia ev9/kia-ev9-concept-low-angle-corner-front.jpg">
+        <img class="car-photo" src="imgs/kia ev9/kia-ev9-reveal-2024.jpg">
+        <img class="car-photo" src="imgs/kia ev9/kia-ev9-concept_167402403130.jpg">
         <div class="car-info">
+
+            <p>The Kia EV9 99.8 kWh AWD GT-Line is a full electric vehicle (BEV). The maximum power of the Kia EV9 99.8
+                kWh
+                AWD GT-Line is 283 kW (380 hp). The maximum torque is 516 lb-ft. The Kia EV9 99.8 kWh AWD GT-Line is all
+                wheel drive and can accelerate from 0 to 62 miles per hour in 5.3 seconds</p>
         </div>
-        <p>The Kia EV9 99.8 kWh AWD GT-Line is a full electric vehicle (BEV). The maximum power of the Kia EV9 99.8 kWh AWD GT-Line is 283 kW (380 hp). The maximum torque is 516 lb-ft. The Kia EV9 99.8 kWh AWD GT-Line is all wheel drive and can accelerate from 0 to 62 miles per hour in 5.3 seconds</p>
     </div>
     <table border="1" align="center">
         <thead>
@@ -52,28 +50,29 @@
             </tr>
         </thead>
         <tr>
-        <td>year</td>
-        <td>2024</td>
+            <td>year</td>
+            <td>2024</td>
         </tr>
-        <tbody>   
+        <tbody>
             <tr>
-            <td>Color</td>
-            <td>Blue</td>
-                <tr>
+                <td>Color</td>
+                <td>Blue</td>
+            <tr>
                 <td>Engine</td>
                 <td>2.5L Inline-4</td>
             </tr>
             <tr>
-            <td>transmission</td>
-            <td>automatic</td>
+                <td>transmission</td>
+                <td>automatic</td>
             <tr>
-            <td>price</td>
-            <td>$54,900</td>
+                <td>price</td>
+                <td>$54,900</td>
             </tr>
             </tr>
         </tbody>
     </table>
-    
+
 
 </body>
+
 </html>
