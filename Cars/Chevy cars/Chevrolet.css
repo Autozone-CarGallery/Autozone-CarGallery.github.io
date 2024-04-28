@@ -1,0 +1,323 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1f1f1f;
+    /* Dark background color */
+    color: #ffffff;
+    /* White text color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    background-color: #111111;
+    /* Darker background color for header */
+    padding: 20px 0;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+    color: #ffd700;
+    /* Change color on hover */
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    background-color: #ffd700;
+    /* Yellow button color */
+    border: none;
+    border-radius: 5px;
+    color: #111111;
+    /* Dark text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #cccc00;
+    /* Darker yellow on hover */
+}
+
+.hero {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    /* White text color */
+    padding: 100px 0;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.cars {
+    background-color: #1f1f1f;
+    /* Dark background color */
+    color: #ffffff;
+    /* White text color */
+    padding: 100px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.car {
+    background-color: #111111;
+    /* Darker background color for cars */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.car img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.car h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.car p {
+    margin-bottom: 10px;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.individual-car {
+    background-color: #1f1f1f;
+    /* Dark background color */
+    color: #ffffff;
+    /* White text color */
+    padding: 100px 0;
+}
+
+.car-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.car-details img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.car-details h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.car-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.car-table td {
+    padding: 10px;
+    border-bottom: 1px solid #555555;
+    /* Darker border color */
+}
+
+.car-table td:first-child {
+    font-weight: bold;
+    width: 40%;
+}
+
+.car-table td:last-child {
+    text-align: right;
+}
+
+.car-details p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button,
+.buy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffd700;
+    /* Yellow button color */
+    color: #111111;
+    /* Dark text color */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover,
+.buy-button:hover {
+    background-color: #cccc00;
+    /* Darker yellow on hover */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact {
+    background-color: #1f1f1f;
+    /* Dark background color */
+    color: #ffffff;
+    /* White text color */
+    padding: 100px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    /* Darker background color for form fields */
+    color: #ffffff;
+    /* White text color */
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #ffd700;
+    /* Yellow button color */
+    color: #111111;
+    /* Dark text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #cccc00;
+    /* Darker yellow on hover */
+}
+
+#contact-info {
+    margin-top: 50px;
+}
+
+#contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact-info ul li {
+    margin-bottom: 10px;
+}
+
+#contact-info ul li strong {
+    font-weight: bold;
+}
