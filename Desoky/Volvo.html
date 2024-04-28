@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lange+="en">
+    <head>
+        <meat charset="UTF-8"></meat>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>css</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script>
+            function toggleCarsSection() {
+                var carsSection = document.getElementById("cars");
+                if (carsSection.style.display === "none") {
+                    carsSection.style.display = "block";
+                } else {
+                    carsSection.style.display = "none";
+                }
+            }
+        </script>
+    </head>
+    <body background="imgs/STARK0001_1920x1080.avif">
+        <section class="cars" id="cars">
+            <div class="heading">
+                <span>ALL cars</span>
+                <button onclick="toggleCarsSection()">cars</button>
+                <ul>
+                    <li>volvo ex30</li>
+                    <li>volvo ex90</li>
+                    <li>volvo s60</li>
+                    <li>volvo s80</li>
+                    <li>volvo xc90</li>
+                </ul>
+            </div>
+            <div class="cars-container container">
+                <div class="box">
+                    <a href="volvo ex30.html">
+                        <img src="imgs/volvo ex30/OIP.jpeg"></a>
+                        <h2>volvo ex30</h2>
+            </div>
+            <div class="cars-container container">
+                <div class="box">
+                    <a href="volvo ex90.html">
+                        <img src="imgs/volvo ex90/OIP (1).jpeg"></a>
+                        <h2>volvo ex90</h2>
+            </div>
+            <div class="cars-container container">
+                <div class="box">
+                    <a href="volvo s60.html">
+                        <img src="imgs/volvo S60/OIP (1).jpeg"></a>
+                        <h2>volvo S60</h2>
+            </div>
+            <div class="cars-container container">
+                <div class="box">
+                    <a href="volvo s80.html">
+                        <img src="imgs/volvo s80/OIP (1).jpeg"></a>
+                        <h2>volvo s80</h2>
+            </div>
+            <div class="cars-container container">
+                <div class="box">
+                    <a href="volvo xc90.html">
+                        <img src="imgs/volvo xc90/webp_mobile_listing_main_02.webp"></a>
+                        <h2>volvo xc90</h2>
+            </div>
+            </div>
+        </section>
+        
+        <iframe src="https://www.volvocars.com/en-eg/" width="400" height="400"></iframe>
+        <h2>Leave a Comment</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="comment">Comment:</label><br>
+            <textarea id="comment" name="comment" rows="4" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    
+    </body>
+</html>
