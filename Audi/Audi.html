@@ -9,6 +9,11 @@
     <script src="../main.js"></script>
     <title>AUDI</title>
     <style>
+        h1{
+            color: white;
+            text-align: center;
+            text-shadow: 5px 2px black;
+        }
         body {
             background: url(1.jpg);
             background-repeat: no-repeat;
@@ -16,15 +21,38 @@
         }
 
         .mo {
-            color: white
+            color: white;
+
+        }
+        div.form{
+            height: 200 px;
+            width: 450 px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10 px;
+            background-color: hsl(168, 100%, 30%);
+            text-align: center;
+            border: 10px rgb(182, 25, 25);
+        }
+        .C6{ color: white;
+
+        }
+        h2.B6{
+            color: white;
+            text-shadow: 5px 2px black;
+        }
+        .A87:hover{
+            border-radius: 8px;
+            transform: scale(1.1);
+            
         }
     </style><!-- PUT THIS IN A CSS FILE -->
-
-    </style>
+    
 </head>
 
 <body>
     <nav>
+
         <a href="../index.html"><img src="../main_Photos/LOGO.png"></a>
         <div class="search">
             <button class="material-symbols-outlined" onclick="searchBrand()">search</button>
@@ -33,24 +61,45 @@
         </div>
         <a href="../index.html"><i class="bx bxs-home"></i>Home</a>
         <a href="../Account/Profile.html" onclick="return CheckLoginin()"><i class='bx bxs-user'></i>Profile</a>
-        <a href="../index.html#service"><i class="bx bxs-cog"></i>Services</a>
+        <a href="../mainpage.html#service"><i class="bx bxs-cog"></i>Services</a>
         <a href="../About Us Page/aboutus.html"><i class=" bx bxs-info-circle"></i>About</a>
-        <a href="../shop.html"><button class="addbutton"><i class="bx bx-cart-add"></i>Shop</button></a>
+        <a href="#"><button class="addbutton"><i class="bx bx-cart-add"></i>My Cart</button></a>
     </nav>
-    <a href="A3.html">
-        <img id="1" src="Audi A3/1.jpg" alt="" height="200 px" width="350 px" class="Image">
+    <h1>Audi</h1>
+    <a href="file:///C:/Users/mohamed/Documents/GitHub/IT-project/Audi/A3.html">
+        <img class="A87" src="Audi A3/1.jpg" alt="" height="200 px" width="350 px" class="Image">
     </a>
     <p class="mo"><strong>Audi A3</strong></p>
-    <a href="" id="2">
-        <img src="audi q6 etron/1.avif" alt="" height="200px" width="350 px" id="2">
+    <a href="file:///C:/Users/mohamed/Documents/GitHub/IT-project/Audi/audi%20q6%20etron/Q6.html" id="2">
+        <img src="audi q6 etron/1.avif" alt="" height="200px" width="350 px" class="A87">
     </a>
     <p class="mo"><strong>Audi Q6 Etron</strong></p>
-    <a href="audi q3/Q3.html" id="3">
-        <img src="audi q3/IMG-20240422-WA0008.jpg" alt="" height="200 px" width="350 px" id="3">
+    <a href="file:///C:/Users/mohamed/Documents/GitHub/IT-project/Audi/audi%20q3/Q3.html" id="3">
+        <img src="audi q3/IMG-20240422-WA0008.jpg" alt="" height="200 px" width="350 px" class="A87">
     </a>
     <p class="mo"><strong>Audi Q3</strong></p>
-
-
+<form action=""></form>
+<br>
+<div class="form">
+<form class="A90">
+    <h2 class="B6">Feeedback</h2>
+    <div class="v7">
+    <label class="C6">Uername</label>
+    <input id="B9" type="text" required>
+    </div>
+    <br>
+    <div class="v7">
+        <label class="C6" >password</label>
+    <input id="A8" type="password" required>
+    </div>
+    <br>
+    <div class="v7">
+        <label class="C6">Feedback</label>
+        <input id="B9" type="text" required>
+    </div>
+    <br>
+    <input type="submit">
+</form>
+</div>
 </body>
-
 </html>
