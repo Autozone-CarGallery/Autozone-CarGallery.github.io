@@ -6,21 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ford</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="Ford.css">
+    <link rel="stylesheet" href="main.css">
     <script src="main.js"></script>
+    <link rel="icon" href="main_Photos/LOGO-ICON.ico">
 </head>
 
-<body>
+<body class="body-FD">
     <nav>
         <a href="index.html"><img src="main_Photos/LOGO.png"></a>
-        <form>
-            <div class="search">
-                <span class="material-symbols-outlined">search</span>
-                <input type="search" class="search-input" placeholder="search...">
-            </div>
-            <div class="result-box">
-            </div>
-        </form>
+        <div class="search">
+            <button class="material-symbols-outlined" onclick="searchBrand()">search</button>
+            <input type="search" class="search-input" onchange="searchBrand()" id="searchInput" placeholder="search..."
+                autocomplete="off">
+        </div>
         <a href="index.html"><i class="bx bxs-home"></i>Home</a>
         <a href="Account/Profile.html" onclick="return CheckLogin()"><i class='bx bxs-user'></i>Profile</a>
         <a href="index.html#service"><i class="bx bxs-cog"></i>Services</a>
@@ -39,12 +37,19 @@
     </div>
     <div class="cars-container">
         <div class="mustang">
-            <img src="Cars/Ford/purepng.com-ford-mustangford-mustangford-falconcompact-carcars-17015274833006bfpk.png" class="charp1" alt="car image">
-            <h1>Ford Mustang</h1>
-            <p>For generations the Mustang has provided accessible performance, iconic styling and practicality at a reasonable price. Now in its seventh generation, the Mustang continues to appeal to a broad range of buyers.
-                Though its 5.0-liter V8 might be the easy choice, the EcoBoost turbocharged four-cylinder helps keep the price down and can still be a lot of fun.
-            A much-needed new infotainment system transforms the interior and should help keep the Mustang looking and feeling current for years to come.</p>
-            <button class="my-button" data-car-name="Ford Mustang"  onclick="addToCart(this.getAttribute('data-car-name'))">Buy now</button>
+            <img src="Cars/Ford/purepng.com-ford-mustangford-mustangford-falconcompact-carcars-17015274833006bfpk.png"
+                class="charp1" alt="car image">
+            <h1 class="h1-DF">Ford Mustang</h1>
+            <p class="p-DF">For generations the Mustang has provided accessible performance, iconic styling and
+                practicality at a
+                reasonable price. Now in its seventh generation, the Mustang continues to appeal to a broad range of
+                buyers.
+                Though its 5.0-liter V8 might be the easy choice, the EcoBoost turbocharged four-cylinder helps keep the
+                price down and can still be a lot of fun.
+                A much-needed new infotainment system transforms the interior and should help keep the Mustang looking
+                and feeling current for years to come.</p>
+            <button class="my-button" data-car-name="Ford Mustang"
+                onclick="addToCart(this.getAttribute('data-car-name'))">Buy now</button>
             <table class="content-table">
                 <thead>
                     <tr>
@@ -66,7 +71,7 @@
                         <th>0 to 100 in 2.9 seconds</th>
                         <th>650 LB-FT OF TORQUE</th>
                         <th>$45,000</th>
-                    </tr>                                
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -74,10 +79,20 @@
 
     <div class="bronco">
         <img src="Cars/Ford/J9AA&angleNo=29&viewType=exterior&width=0&height=0.png" class="charp2" alt="car image">
-        <h1>Ford bronco</h1>
-        <p>The Ford Bronco Sport is one small crossover that can tackle terrain and look good doing it. Technology and usable space are also strong points. However, the Bronco Sport struggles to meet expectations in several areas that rivals have long mastered such as ride comfort, rear passenger space, and confident steering and braking,
-             Cashing in on the excitement around the resurrected Bronco, Ford released two Broncos in 2021: the big one that goes toe-to-toe with the Jeep Wrangler, and the smaller Bronco Sport. The Sport is a Bronco in name only; underneath the retro bodywork are the same mechanical pieces that make up a Ford Escape. But the Bronco Sport is more than just an Escape playing dress-up. Available exclusively with all-wheel drive, it also boasts some genuine off-road tech and capability, making it one of the most capable compact SUVs when the pavement ends. </p>
-            <button class="my-button" data-car-name="Ford Bronco"  onclick="addToCart(this.getAttribute('data-car-name'))">Buy now</button>
+        <h1 class="h1-DF">Ford bronco</h1>
+        <p class="p-DF">The Ford Bronco Sport is one small crossover that can tackle terrain and look good doing it.
+            Technology and
+            usable space are also strong points. However, the Bronco Sport struggles to meet expectations in several
+            areas that rivals have long mastered such as ride comfort, rear passenger space, and confident steering and
+            braking,
+            Cashing in on the excitement around the resurrected Bronco, Ford released two Broncos in 2021: the big one
+            that goes toe-to-toe with the Jeep Wrangler, and the smaller Bronco Sport. The Sport is a Bronco in name
+            only; underneath the retro bodywork are the same mechanical pieces that make up a Ford Escape. But the
+            Bronco Sport is more than just an Escape playing dress-up. Available exclusively with all-wheel drive, it
+            also boasts some genuine off-road tech and capability, making it one of the most capable compact SUVs when
+            the pavement ends. </p>
+        <button class="my-button" data-car-name="Ford Bronco"
+            onclick="addToCart(this.getAttribute('data-car-name'))">Buy now</button>
         <table class="content-table">
             <thead>
                 <tr>
@@ -99,15 +114,19 @@
                     <th>0 to 100 in 3.5 seconds</th>
                     <th>717 LB-FT OF TORQUE</th>
                     <th>$50,000</th>
-                </tr>                
+                </tr>
             </tbody>
         </table>
     </div>
     <div class="ranger">
         <img src="Cars/Ford/Ford-Ranger-Raptor-PNG-File.png" class="charp3" alt="car image">
-        <h1>Ford ranger</h1>
-        <p>The Ford Ranger, with its high-quality cabin, comfortable ride and helpful driver assist features, smooths out many of the rough edges of traditional truck ownership. Impressively, it does so without compromising on towing or payload capability either. It's a great pick for a midsize truck.</p>
-            <button class="my-button" data-car-name="Ford Ranger"  onclick="addToCart(this.getAttribute('data-car-name'))">Buy now</button>
+        <h1 class="h1-DF">Ford ranger</h1>
+        <p class="p-DF">The Ford Ranger, with its high-quality cabin, comfortable ride and helpful driver assist
+            features, smooths
+            out many of the rough edges of traditional truck ownership. Impressively, it does so without compromising on
+            towing or payload capability either. It's a great pick for a midsize truck.</p>
+        <button class="my-button" data-car-name="Ford Ranger"
+            onclick="addToCart(this.getAttribute('data-car-name'))">Buy now</button>
         <table class="content-table">
             <thead>
                 <tr>
@@ -129,15 +148,22 @@
                     <th>0 to 100 in 6.2 seconds</th>
                     <th>470 LB-FT OF TORQUE</th>
                     <th>$55,000</th>
-                </tr>                              
+                </tr>
             </tbody>
         </table>
     </div>
     <div class="exp">
         <img src="Cars/Ford/exp.png" class="charp3" alt="car image">
-        <h1>Ford Explorer</h1>
-        <p>The 2024 Ford Ranger is fully redesigned. This new generation introduces changes and updates that significantly improve this midsize truck. It's easier and more comfortable to drive while providing plenty of capability for doing truck stuff, such as towing a trailer or a bunch of gear in the bed. The 2024 Ranger also has a nicer-looking cabin that's fitted with a lot of Ford's latest technology and driver assistance features. Ford has simplified this generation's lineup — you can only get the truck as a crew cab with a short bed, for example — but there is a new hardcore off-road model called the Raptor.</p>
-            <button class="my-button" data-car-name="Ford Explorer"  onclick="addToCart(this.getAttribute('data-car-name'))">Buy now</button>
+        <h1 class="h1-DF">Ford Explorer</h1>
+        <p class="p-DF">The 2024 Ford Ranger is fully redesigned. This new generation introduces changes and updates
+            that
+            significantly improve this midsize truck. It's easier and more comfortable to drive while providing plenty
+            of capability for doing truck stuff, such as towing a trailer or a bunch of gear in the bed. The 2024 Ranger
+            also has a nicer-looking cabin that's fitted with a lot of Ford's latest technology and driver assistance
+            features. Ford has simplified this generation's lineup — you can only get the truck as a crew cab with a
+            short bed, for example — but there is a new hardcore off-road model called the Raptor.</p>
+        <button class="my-button" data-car-name="Ford Explorer"
+            onclick="addToCart(this.getAttribute('data-car-name'))">Buy now</button>
         <table class="content-table">
             <thead>
                 <tr>
@@ -159,36 +185,27 @@
                     <th>0 to 100 in 4.0 seconds</th>
                     <th>550 LB-FT OF TORQUE</th>
                     <th>$60,000</th>
-                </tr>                
+                </tr>
             </tbody>
         </table>
     </div>
-    </div>
-    <script>
-        function scrollToDiv(className) {
-            var targetDiv = document.querySelector('.' + className);
-            if (targetDiv) {
-                targetDiv.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-    </script>    
-</div>
 
-    <divc lass="addtional information">
-        <form action="/submit" method="post">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br>
-            
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br>
-            
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password"><br>
-            
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
-            
-            <input type="submit" value="Submit">
+
+    <div class="addtional information">
+        <form class="form-df" method="post">
+            <label class="label-DF" for="name">Name:</label><br>
+            <input class="text-DF" type="text" id="name" name="name"><br>
+
+            <label class="label-DF" for="email">Email:</label><br>
+            <input class="email-DF" type="email" id="email" name="email"><br>
+
+            <label class="label-DF" for="password">Password:</label><br>
+            <input class="password-DF" type="password" id="password" name="password"><br>
+
+            <label class="label-DF" for="message">Message:</label><br>
+            <textarea class="textarea-DF" id="message" name="message" rows="4" cols="50"></textarea><br>
+
+            <input class="submit-DF" type="submit" value="Submit">
         </form>
     </div>
 </body>

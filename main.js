@@ -1,4 +1,4 @@
-
+//-------------------------------------------------------Mohamed Ehab part start here-----------------------------------------------------------------------------------------//
 function CheckLogin() {
     if (localStorage.getItem('LoggedIn') === 'true') {
         return true;
@@ -385,7 +385,7 @@ function f() {
     alert("Submitted successfully!");
 }
 
-//-------------------------------------------------------Harby part start here-----------------------------------------------------------------------------------------//
+//-------------------------------------------------------Mohamed Harby part start here-----------------------------------------------------------------------------------------//
 function Buy_Alert() {
     var Buy_confirm;
     if (confirm("are you sure you want to buy this car ?")) {
@@ -401,7 +401,7 @@ function Comment_alert() {
     alert("Thank you for your Comment, have a nice day!")
 }
 
-//-------------------------------------------------------Desoky part start here-----------------------------------------------------------------------------------------//
+//-------------------------------------------------------Mohamed Desoky part start here-----------------------------------------------------------------------------------------//
 
 
 function toggleCarsSection() {
@@ -416,7 +416,17 @@ function toggleCarsSection() {
     }
 }
 
-//-------------------------------------------------------Samy part start here-----------------------------------------------------------------------------------------//
+//-------------------------------------------------------Mohamed Samy part start here-----------------------------------------------------------------------------------------//
 function buy() {
     alert("Audi A3 is added to cart")
+}
+
+//-------------------------------------------------------Mohamed Hussein part start here-----------------------------------------------------------------------------------------//
+
+
+function scrollToDiv(className) {
+    var targetDiv = document.querySelector('.' + className);
+    if (targetDiv) {
+        targetDiv.scrollIntoView({ behavior: 'smooth' });
+    }
 }

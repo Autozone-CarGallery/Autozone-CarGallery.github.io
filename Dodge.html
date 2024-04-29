@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dodge</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="Dodge.css">
     <link rel="stylesheet" href="main.css">
     <script src="main.js"></script>
     <link rel="icon" href="main_Photos/LOGO-ICON.ico">
 </head>
 
-<body>
+<body class="body-DF">
     <nav>
         <a href="index.html"><img src="main_Photos/LOGO.png"></a>
         <div class="search">
@@ -32,7 +31,7 @@
             <source src="Cars/Dodge/videoplayback.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <div class="iframe-container">
+        <div class="iframe-container-DF">
             <iframe src="https://en.wikipedia.org/wiki/Dodge" frameborder="0"></iframe>
         </div>
     </div>
@@ -48,8 +47,9 @@
     <div class="cars-container">
         <div class="charger">
             <img src="Cars/Dodge/Dodge-Charger-PNG-Free-Download.png" class="charp1" alt="car image">
-            <h1>Dodge charger</h1>
-            <p>Muscle cars are meant to bark through the neighborhood between streetlights, and the Dodge Charger has
+            <h1 class="h1-DF">Dodge charger</h1>
+            <p class="p-DF">Muscle cars are meant to bark through the neighborhood between streetlights, and the Dodge
+                Charger has
                 been off its leash for plenty of years now. More than a decade into its current generation, the
                 seemingly ageless Charger comes standard with a 292-hp V-6 and rear-wheel drive, with an all-wheel drive
                 option should you need it. Consider this version the calm older dog of the lineup. But there’s also bark
@@ -90,8 +90,9 @@
 
     <div class="challenger">
         <img src="Cars/Dodge/Dodge-Challenger-PNG-HD-Image.png" class="charp2" alt="car image">
-        <h1>Dodge challenger</h1>
-        <p>While rival muscle cars have pivoted recently toward sharp handling, the 2023 Dodge Challenger keeps
+        <h1 class="h1-DF">Dodge challenger</h1>
+        <p class="p-DF">While rival muscle cars have pivoted recently toward sharp handling, the 2023 Dodge Challenger
+            keeps
             things retro with a package that’s designed more for old-school pony-car jollies and straight-line
             speed. A V-6 engine is standard in these non-SRT Challengers but the real fun comes with the optional
             naturally aspirated Hemi V-8 engines, which are offered in a variety of displacements and outputs
@@ -130,8 +131,9 @@
     </div>
     <div class="duarngo">
         <img src="Cars/Dodge/Dodge-Durango-SRT-Download-PNG-Image.png" class="charp3" alt="car image">
-        <h1>Dodge duarngo</h1>
-        <p>The Durango might not appeal to a broad audience, but its performance and practicality are certainly
+        <h1 class="h1-DF">Dodge duarngo</h1>
+        <p class="p-DF">The Durango might not appeal to a broad audience, but its performance and practicality are
+            certainly
             impressive. After all, not many SUVs can hit 60 mph in under 5 seconds and tow up to 8,700 pounds. But what
             you get in capability you lack in refinement. As well equipped as the Durango might be, you are constantly
             reminded this is one of the older platforms on the market.</p>
@@ -164,8 +166,9 @@
     </div>
     <div class="Hornet">
         <img src="Cars/Dodge/ac3cddad-3888-43cc-8833-d3306c5fc3df.webp" class="charp3" alt="car image">
-        <h1>Dodge Hornet</h1>
-        <p>The Dodge Hornet is an extra-small SUV that packs a particularly potent punch for a vehicle its size. Where
+        <h1 class="h1-DF">Dodge Hornet</h1>
+        <p class="p-DF">The Dodge Hornet is an extra-small SUV that packs a particularly potent punch for a vehicle its
+            size. Where
             other subcompact sport-utes might be luck
             y to exceed 150 horsepower,
             the Hornet makes a whopping 268 horsepower in base form. The Hornet is based on the same architecture that
@@ -201,32 +204,22 @@
             </tbody>
         </table>
     </div>
-    </div>
-    <script>
-        function scrollToDiv(className) {
-            var targetDiv = document.querySelector('.' + className);
-            if (targetDiv) {
-                targetDiv.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-    </script>
-    </div>
 
     <div class="addtional information">
         <form class="form-df" method="post">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br>
+            <label class="label-DF" for="name">Name:</label><br>
+            <input class="text-DF" type="text" id="name" name="name"><br>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br>
+            <label class="label-DF" for="email">Email:</label><br>
+            <input class="email-DF" type="email" id="email" name="email"><br>
 
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password"><br>
+            <label class="label-DF" for="password">Password:</label><br>
+            <input class="password-DF" type="password" id="password" name="password"><br>
 
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+            <label class="label-DF" for="message">Message:</label><br>
+            <textarea class="textarea-DF" id="message" name="message" rows="4" cols="50"></textarea><br>
 
-            <input type="submit" value="Submit">
+            <input class="submit-DF" type="submit" value="Submit">
         </form>
     </div>
 </body>
