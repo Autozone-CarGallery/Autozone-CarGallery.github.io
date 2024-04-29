@@ -203,8 +203,8 @@ function searchBrand() {
         "bmw": "https://autozone-cargallery.github.io/BMW.html",
         "audi": "https://autozone-cargallery.github.io/Audi/Audi.html",
         "mercedes": "https://autozone-cargallery.github.io/Mercedes.html",
-        "alfa romeo": "https://autozone-cargallery.github.io/Alfa.html",
-        "ford": "#",
+        "alfa romeo": "https://autozone-cargallery.github.io/Alfa-Romeo/Alfa.html",
+        "ford": "https://autozone-cargallery.github.io/Ford.html",
         "kia": "https://autozone-cargallery.github.io/Desoky/Kia.html",
         "nissan": "https://autozone-cargallery.github.io/Nissan%20cars%20shop/Nissan%20cars.html",
         "dodge": "https://autozone-cargallery.github.io/Dodge.html",
@@ -430,3 +430,10 @@ function scrollToDiv(className) {
         targetDiv.scrollIntoView({ behavior: 'smooth' });
     }
 }
+let addButton = document.querySelectorAll(".my-button");
+addButton.forEach(function (button) {
+    button.addEventListener("click", function () {
+        var carName = this.getAttribute("data-car-name");
+        addToCart(carName);
+    });
+});
