@@ -212,8 +212,18 @@ function searchBrand() {
         "lamborghini": "https://autozone-cargallery.github.io/Cars/Lamborgini%20Cars/Lamborghini.html",
         "toyota": "https://autozone-cargallery.github.io/Toyota/Touota.html",
         "volvo": "https://autozone-cargallery.github.io/Volvo.html",
-        "BMW 3 Series": "https://autozone-cargallery.github.io/BMW/BMW%203%20Series.html"
-
+        "bmw 3 series": "https://autozone-cargallery.github.io/BMW/BMW%203%20Series.html" ,
+        "bmw 5 series": "https://autozone-cargallery.github.io/BMW/BMW%205%20Series.html" ,
+        "bmw 7 series": "https://autozone-cargallery.github.io/BMW/BMW%207%20Series.html" ,
+        "bmw m8": "https://autozone-cargallery.github.io/BMW/BMW%20M8.html" ,
+        "bmw x6": "https://autozone-cargallery.github.io/BMW/BMW%20X6.html" ,
+        "bmw x7": "https://autozone-cargallery.github.io/BMW/BMW%20X7.html" ,
+        "mercedes cla": "https://autozone-cargallery.github.io/Mercedes/Mercedes%20CLA.html" ,
+        "mercedes a class": "https://autozone-cargallery.github.io/Mercedes/Mercedes%20A%20Class.html" ,
+        "mercedes b class": "https://autozone-cargallery.github.io/Mercedes/Mercedes%20B%20Class.html" ,
+        "mercedes c class": "https://autozone-cargallery.github.io/Mercedes/Mercedes%20C%20Class.html" ,
+        "mercedes e class": "https://autozone-cargallery.github.io/Mercedes/Mercedes%20E%20Class.html" ,
+        "mercedes s class": "https://autozone-cargallery.github.io/Mercedes/Merccedes%20S%20Class.html" ,
     };
     if (Brands.hasOwnProperty(keyword)) {
         window.location.href = Brands[keyword];
