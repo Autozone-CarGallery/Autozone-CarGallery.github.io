@@ -15,6 +15,14 @@ function CheckLoginin() {
         return false;
     }
 }
+function CheckLogininin() {
+    if (localStorage.getItem('LoggedIn') === 'true') {
+        return true;
+    } else {
+        window.location.href = "../../Account/Login.html";
+        return false;
+    }
+}
 function Logout() {
     localStorage.setItem('LoggedIn', 'false');
     window.location.href = "../index.html";
@@ -195,7 +203,7 @@ function searchBrand() {
         "bmw": "https://autozone-cargallery.github.io/BMW.html",
         "audi": "https://autozone-cargallery.github.io/Audi/Audi.html",
         "mercedes": "https://autozone-cargallery.github.io/Mercedes.html",
-        "alfa romeo": "#",
+        "alfa romeo": "https://autozone-cargallery.github.io/Alfa.html",
         "ford": "#",
         "kia": "https://autozone-cargallery.github.io/Desoky/Kia.html",
         "nissan": "https://autozone-cargallery.github.io/Nissan%20cars%20shop/Nissan%20cars.html",
@@ -405,3 +413,7 @@ function toggleCarsSection() {
     }
 }
 
+//-------------------------------------------------------Samy part start here-----------------------------------------------------------------------------------------//
+function buy() {
+    alert("Audi A3 is added to cart")
+}
