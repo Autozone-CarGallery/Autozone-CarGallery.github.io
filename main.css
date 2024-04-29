@@ -1454,9 +1454,273 @@ textarea {
   }
 }
 
+.body-DF {
+  background: rgb(0, 0, 0, 0.5) url("Cars/Dodge/OIP.jpeg") center center fixed;
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+}
 
 
 
+.body-FD {
+  background: rgb(0, 0, 0, 0.5) url('Cars/Ford/wp2488393.jpg') center center fixed;
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+}
+
+.charger {
+  width: 80%;
+  left: 15%;
+  top: 20%;
+  padding: 20px;
+  padding-left: 50;
+}
+
+.duarngo {
+  width: 80%;
+  left: 15%;
+  top: 20%;
+  padding: 20px;
+  padding-left: 50;
+}
+
+
+
+.Hornet {
+  width: 80%;
+  left: 15%;
+  top: 20%;
+  padding: 20px;
+  padding-left: 50;
+}
+
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  color: #dddddd;
+}
+
+.content-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.my-button {
+  background-color: #009879;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 50;
+}
+
+.my-button:hover {
+  background-color: #009879;
+  /* Darker green background color on hover */
+  border-radius: 100px;
+}
+
+.h1-DF {
+  color: #bc8181;
+  font-style: initial;
+}
+
+.p-DF {
+  color: #dddddd;
+}
+
+
+.charp2 {
+  width: 750px;
+  height: 350px;
+  float: left;
+}
+
+.challenger {
+  width: 80%;
+  left: 15%;
+  top: 20%;
+  padding: 20px;
+  padding-left: 50;
+}
+
+.charp3:hover {
+  background-color: #009879;
+  border-radius: 20px;
+}
+
+.charp2:hover {
+  background-color: #009879;
+  border-radius: 20px;
+}
+
+.charp1:hover {
+  background-color: #009879;
+  border-radius: 20px;
+}
+
+.content-table th:hover {
+  background-color: #009879;
+  border-radius: 20PX;
+}
+
+.p-DF :hover {
+  font-size: 400;
+}
+
+form.form-df {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #7c767655;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.label-DF {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+input.text-DF,
+input.email-DF,
+input.password-DF,
+.textarea-DF {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #b9afaf;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.textarea-DF {
+  resize: vertical;
+  height: 100px;
+}
+
+input.submit-DF {
+  background-color: #009879;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+input.submit-DF :hover {
+  background-color: #006551;
+}
+
+.my-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+/* Style list items */
+.my-list li {
+  background-color: #009879;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  /* Add cursor pointer */
+}
+
+/* Add hover effect */
+.my-list li:hover {
+  background-color: #006551;
+}
+
+.target-div {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.iframe-container-DF {
+  position: relative;
+  width: 100%;
+  padding-bottom: 30%;
+}
+
+.iframe-container-DF iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mustang {
+  width: 80%;
+  left: 15%;
+  top: 20%;
+  padding: 20px;
+  padding-left: 50;
+}
+
+.bronco {
+  width: 80%;
+  left: 15%;
+  top: 20%;
+  padding: 20px;
+  padding-left: 50;
+}
+
+.ranger {
+  width: 80%;
+  left: 15%;
+  top: 20%;
+  padding: 20px;
+  padding-left: 50;
+}
+
+.exp {
+  width: 80%;
+  left: 15%;
+  top: 20%;
+  padding: 20px;
+  padding-left: 50;
+}
 
 
 
