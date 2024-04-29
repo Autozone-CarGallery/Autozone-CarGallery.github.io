@@ -1,19 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: sans-serif;
 }
 
-body {
-    background-color: #f1f1f1;
-}
 
 .aboutus {
     padding: 100px;
 }
 
-.container {
+.container-about {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -92,24 +88,5 @@ body {
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .image_section,
-    .content_section {
-        flex: 100%;
-        margin: auto;
-        text-align: center;
-        padding: 0px;
-    }
-
-    .image_section img {
-        width: 100%;
-        margin-bottom: 30px;
     }
 }

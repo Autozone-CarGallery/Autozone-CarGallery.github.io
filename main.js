@@ -405,11 +405,14 @@ function Comment_alert() {
 
 
 function toggleCarsSection() {
-    var carsSection = document.getElementsByClassName("cars-container");
-    if (carsSection.style.display === "none") {
-        carsSection.style.display = "flex";
-    } else {
-        carsSection.style.display = "none";
+    var carsSections = document.getElementsByClassName("cars-container");
+    for (var i = 0; i < carsSections.length; i++) {
+        var carsSection = carsSections[i];
+        if (carsSection.style.display === "none" || carsSection.style.display === "") {
+            carsSection.style.display = "flex";
+        } else {
+            carsSection.style.display = "none";
+        }
     }
 }
 
