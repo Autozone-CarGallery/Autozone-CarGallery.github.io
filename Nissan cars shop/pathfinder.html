@@ -4,20 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nissan Pathfinder</title>
+    <title>Nissan</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="../main.css">
     <link rel="stylesheet" href="stayel.css">
+    <script src="../main.js"></script>
 </head>
 
 <body>
     <nav>
-        <div style="text-align: center;" class="LOGO">
-            <a href="../index.html"><img src="../main_Photos/LOGO.png"></a>
+        <a href="../index.html"><img src="../main_Photos/LOGO.png"></a>
+        <div class="search">
+            <button class="material-symbols-outlined" onclick="searchBrand()">search</button>
+            <input type="search" class="search-input" onchange="searchBrand()" id="searchInput" placeholder="search..."
+                autocomplete="off">
         </div>
+        <a href="../index.html"><i class="bx bxs-home"></i>Home</a>
+        <a href="../Account/Profile.html" onclick="return CheckLoginin()"><i class='bx bxs-user'></i>Profile</a>
+        <a href="../index.html#service"><i class="bx bxs-cog"></i>Services</a>
+        <a href="../About Us Page/aboutus.html"><i class=" bx bxs-info-circle"></i>About</a>
+        <a href="../shop.html"><button class="addbutton"><i class="bx bx-cart-add"></i>Shop</button></a>
     </nav>
-    <div class="container">
+    <div class="container-NT">
         <div class="main_content">
             <div class="content">
-                <h1>Nissan Pathfinder <br> <a href="" class="btn"> $36,080 </a> </h1>
+                <h1>Pathfinder<br>
+                    <div class="btn"> <button onclick="Buy_Alert()">36,080 $</button> </div>
+                </h1>
+                <p id="buy_confirm"></p>
                 <p>When adventure calls, answer with the 2024 Nissan Pathfinder. Whether it’s the thrill of new
                     experiences or new destinations — or both — this mid-size SUV comes ready to play with room for up
                     to 8 passengers, an expansive cargo capacity, and advanced available 4x4 capability</p>
@@ -47,6 +61,12 @@
 
         </div>
     </div>
+    <form>
+        <textarea name="message" rows="10" cols="30">Have you ride this car before ?
+You can write a comment about your experience !</textarea>
+        <br><br>
+        <input type="submit" onclick="Comment_alert()">
+    </form>
 </body>
 
 </html>

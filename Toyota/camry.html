@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camry</title>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nissan</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="../main.css">
+        <script src="../main.js"></script>
+        <link rel="stylesheet" href="stayel.css">
+    </head>
+
+<body>
+    <nav>
+        <a href="../index.html"><img src="../main_Photos/LOGO.png"></a>
+        <div class="search">
+            <button class="material-symbols-outlined" onclick="searchBrand()">search</button>
+            <input type="search" class="search-input" onchange="searchBrand()" id="searchInput" placeholder="search..."
+                autocomplete="off">
+        </div>
+        <a href="../index.html"><i class="bx bxs-home"></i>Home</a>
+        <a href="../Account/Profile.html" onclick="return CheckLoginin()"><i class='bx bxs-user'></i>Profile</a>
+        <a href="../index.html#service"><i class="bx bxs-cog"></i>Services</a>
+        <a href="../About Us Page/aboutus.html"><i class=" bx bxs-info-circle"></i>About</a>
+        <a href="../shop.html"><button class="addbutton"><i class="bx bx-cart-add"></i>Shop</button></a>
+    </nav>
+    <div class="container-NT">
+        <div class="main_content">
+            <div class="content">
+                <h1>Camry<br>
+                    <div class="btn"> <button onclick="Buy_Alert()">27,500$</button> </div>
+                </h1>
+                <p id="buy_confirm"></p>
+                <p>Every day deserves more fun.
+                    Camry’s refined performance and elevated design let you chase your daily thrills in style.</p>
+            </div>
+            <div class="img">
+                <img src="Toyota Photos\Camry\3.png" alt="">
+            </div>
+            <div class="futures">
+                <div class="engine">
+                    <img src="Toyota Photos\Engine.jpg" alt="">
+                    <p>(225 horsepower) ,2.5-Liter Dynamic Force 4-Cylinder DOHC D-4S Injection</p>
+                    <div class="transmission">
+                        <img src="Toyota Photos\Transmission.jpg" alt="">
+                        <p>Electronically controlled Continuously Variable Transmission (ECVT)</p>
+                    </div>
+                    <div class="power">
+                        <img src="Toyota Photos\pngtree-modern-power-logo-image_487711.jpg" alt="">
+                        <p>Acceleration (0-60 mph in 5.8s)</p>
+                    </div>
+                    <div class="tank">
+                        <img src="Toyota Photos\Tank.png" alt="">
+                        <p>Tank Capacity 15.8 gal</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <form>
+        <textarea name="message" rows="10" cols="30">Have you ride this car before ?
+You can write a comment about your experience !</textarea>
+        <br><br>
+        <input type="submit" onclick="Comment_alert()">
+    </form>
+</body>
+
+</html>

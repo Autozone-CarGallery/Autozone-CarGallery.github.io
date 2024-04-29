@@ -15,12 +15,11 @@
 <body>
   <nav>
     <a href="index.html"><img src="main_Photos/LOGO.png"></a>
-    <form>
-      <div class="search">
-        <span class="material-symbols-outlined">search</span>
-        <input type="search" class="search-input" placeholder="search...">
-      </div>
-    </form>
+    <div class="search">
+      <button class="material-symbols-outlined" onclick="searchBrand()">search</button>
+      <input type="search" class="search-input" onchange="searchBrand()" id="searchInput" placeholder="search..."
+        autocomplete="off">
+    </div>
     <a href="index.html"><i class="bx bxs-home"></i>Home</a>
     <a href="Account/Profile.html" onclick="return CheckLogin()"><i class='bx bxs-user'></i>Profile</a>
     <a href="index.html#service"><i class="bx bxs-cog"></i>Services</a>
@@ -31,7 +30,7 @@
   <h1 style="text-align: center; margin-top: 20px;"><br>Choose Your Mercedes Car</h1>
 
   <div class="car-container">
-    <div class="car">
+    <div class="car-MB">
       <h2>Mercedes CLA</h2>
       <div class="image-viewer" id="image-viewer-7">
         <button class="backward-btn">&lt;</button>
@@ -50,7 +49,7 @@
       </a>
     </div>
 
-    <div class="car">
+    <div class="car-MB">
       <h2>Mercedes A Class</h2>
       <div class="image-viewer" id="image-viewer-8">
         <button class="backward-btn">&lt;</button>
@@ -69,7 +68,7 @@
       </a>
     </div>
 
-    <div class="car">
+    <div class="car-MB">
       <h2>Mercedes B Class</h2>
       <div class="image-viewer" id="image-viewer-9">
         <button class="backward-btn">&lt;</button>
@@ -88,7 +87,7 @@
       </a>
     </div>
 
-    <div class="car">
+    <div class="car-MB">
       <h2>Mercedes C Class</h2>
       <div class="image-viewer" id="image-viewer-10">
         <button class="backward-btn">&lt;</button>
@@ -107,7 +106,7 @@
       </a>
     </div>
 
-    <div class="car">
+    <div class="car-MB">
       <h2>Mercedes E Class</h2>
       <div class="image-viewer" id="image-viewer-11">
         <button class="backward-btn">&lt;</button>
@@ -126,7 +125,7 @@
       </a>
     </div>
 
-    <div class="car">
+    <div class="car-MB">
       <h2>Mercedes S Class</h2>
       <div class="image-viewer" id="image-viewer-12">
         <button class="backward-btn">&lt;</button>

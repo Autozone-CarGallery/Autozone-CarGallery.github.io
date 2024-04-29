@@ -14,19 +14,18 @@
 
 </head>
 
-<body onload="FullscreenImage()">
+<body onload="FullscreenImage()" class="login-body">
     <div class="AlertBox" id="ErrorMessage">
         <p class="Alert"></p>
 
     </div>
     <nav>
         <a href="../index.html"><img src="../main_Photos/LOGO.png"></a>
-        <form>
-            <div class="search">
-                <span class="material-symbols-outlined">search</span>
-                <input type="search" class="search-input" placeholder="search...">
-            </div>
-        </form>
+        <div class="search">
+            <button class="material-symbols-outlined" onclick="searchBrand()">search</button>
+            <input type="search" class="search-input" onchange="searchBrand()" id="searchInput" placeholder="search..."
+                autocomplete="off">
+        </div>
         <a href="../index.html"><i class="bx bxs-home"></i>Home</a>
         <a href="Profile.html" onclick="return CheckLogin()"><i class='bx bxs-user'></i>Profile</a>
         <a href="../index.html#service"><i class="bx bxs-cog"></i>Services</a>
