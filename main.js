@@ -212,6 +212,7 @@ function searchBrand() {
         "lamborghini": "https://autozone-cargallery.github.io/Cars/Lamborgini%20Cars/Lamborghini.html",
         "toyota": "https://autozone-cargallery.github.io/Toyota/Touota.html",
         "volvo": "https://autozone-cargallery.github.io/Volvo.html",
+        "BMW 3 Series": "https://autozone-cargallery.github.io/BMW/BMW%203%20Series.html"
 
     };
     if (Brands.hasOwnProperty(keyword)) {
