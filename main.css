@@ -36,7 +36,7 @@ nav a:hover {
 
 nav .addbutton {
   color: black;
-  background: var(--main-color);
+  background-color: white;
   padding: 1.2rem 1.5rem;
   font-size: 1.4rem;
   border-radius: 14px;
@@ -55,8 +55,8 @@ nav .addbutton {
 
 .header-left .shop-button {
   position: relative;
-  background: var(--main-color);
   color: black;
+  background-color: white;
   padding: 1.2rem 1.5rem;
   font-size: 1.4rem;
   border-radius: 14px;
@@ -72,46 +72,7 @@ nav .addbutton {
   vertical-align: middle;
 }
 
-.banner__card {
-  padding: 5rem 2rem;
-  display: grid;
-  place-content: center;
-}
 
-.banner__card:nth-child(1) {
-  background-color: var(--secondary-color);
-}
-
-.banner__card:nth-child(2) {
-  background-color: var(--secondary-color-dark);
-}
-
-.banner__card h4 {
-  max-width: 300px;
-  margin: auto;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--white);
-}
-
-.banner__image img {
-  height: 100%;
-  object-fit: cover;
-}
-
-.experience__container {
-  display: grid;
-  gap: 2rem;
-}
-
-.experience__image img {
-  max-width: 500px;
-  margin: auto;
-}
-
-.service {
-  background-color: var(--extra-light);
-}
 
 .service__container {
   text-align: center;
@@ -135,11 +96,6 @@ nav .addbutton {
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
   font-weight: 600;
-  color: var(--secondary-color-dark);
-}
-
-.service__card p {
-  color: var(--text-light);
 }
 
 .customisation {
@@ -157,7 +113,7 @@ nav .addbutton {
 .customisation__container .section__description {
   max-width: 750px;
   margin: auto;
-  color: var(--white);
+  color: black;
 }
 
 .customisation__grid {
@@ -169,11 +125,11 @@ nav .addbutton {
 .customisation__card h4 {
   font-size: 3rem;
   font-weight: 700;
-  color: var(--white);
+  color: white;
 }
 
 .customisation__card p {
-  color: var(--white);
+color: white;
 }
 
 
@@ -192,7 +148,7 @@ nav .addbutton {
   position: relative;
   overflow: hidden;
   padding: 4rem 1rem;
-  border-top: 5px solid var(--extra-light);
+  border-top: 5px solid #f0f0f0;
   border-radius: 10px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -200,8 +156,8 @@ nav .addbutton {
 }
 
 .price__card:hover {
-  border-color: var(--primary-color);
-  background-color: var(--extra-light);
+  border-color: white;
+  background-color: #f0f0f0;
 }
 
 .price__card__ribbon {
@@ -212,8 +168,7 @@ nav .addbutton {
   transform: rotate(45deg);
   padding: 5px 5rem;
   font-size: 0.9rem;
-  color: var(--white);
-  background-color: var(--primary-color);
+  color: black;
   transition: 0.3s;
 }
 
@@ -224,7 +179,6 @@ nav .addbutton {
 .price__card h4 {
   font-size: 1.2rem;
   font-weight: 600;
-  color: var(--secondary-color-dark);
 }
 
 .price__card h3 {
@@ -242,14 +196,6 @@ nav .addbutton {
 
 @media (width > 480px) {
 
-  .banner__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .banner__image {
-    grid-column: 1/3;
-  }
-
   .service__grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -266,20 +212,6 @@ nav .addbutton {
 
 @media (width > 768px) {
 
-
-  .banner__container {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .banner__image {
-    grid-column: 3/5;
-  }
-
-  .experience__container {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-  }
-
   .service__grid {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -290,28 +222,6 @@ nav .addbutton {
 
   .price__grid {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .contact__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .contact__content {
-    grid-column: 2/3;
-  }
-
-  .subscribe__container {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-  }
-
-  .footer__container {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .footer__col:first-child {
-    max-width: 400px;
   }
 }
 
