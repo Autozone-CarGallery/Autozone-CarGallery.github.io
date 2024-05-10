@@ -1,70 +1,43 @@
-<!DOCTYPE html> 
+<!DOCTYPE html> html>
 <html>
-    <head>
-        <title>Audi A3</title>
-        <style>
-            h1{text-align: center; color: white;
-            text-shadow: 5px 2px black; }
-            body{background: url(1.jpg); background-repeat: no-repeat; background-size: cover;}
-            h3{color: white;
-            text-shadow: 5px 2px black;}
-            table{
-                border-collapse: collapse;
-                margin: 25 px 0;
-                font-size: 0.9cm;
-                min-width: 2000 px;
-                text-align: center;
-                margin-left: auto;
-                margin-right: auto;
-            }
-          tbody  tr#a{
-                background-color: hsl(168, 100%, 30%);
-                color: white;
-                background-size: cover;
 
-            }
-            table th.th{
-                padding:12px 15px;
-            }
-            content-table td.td{
-                padding: 12 px 15 px;
-            }
-            tbody tr#b{color: white;}
-            tbody tr#c{color: white; background-color:hsl(168, 100%, 30%) ;}
-            #ab{text-align: center;}
-            tr#d{color: white;}
-            tr#e{color: white; background-color: hsl(168, 100%, 30%);}
-            button{background-color:white;
-            position: ;}
-            img.A:hover{
-                border-radius: 8px;
-                transform: scale(1.1);
-            }
-            button{
-                margin-left: 720px;
-                background-color: brown;
-            }
-            tr:hover{
-            transform: scale(1.1);
-        }
-            
-        </style>
-        <script>
-            function buy(){
-                alert("Audi A3 is added to cart")
-            }
-        </script>
-    </head>
-    <body>
-        <h1>Audi A3 </h1>
-        <img class="A" src="Audi A3/2.jpg" alt="" height="200 px"="500 px">
-        <img class="A" src="Audi A3/WhatsApp Image 2024-04-21 at 22.22.12_0d3d8317.jpg" alt="" height="200px" width="500 px">
-        <img class="A" src="Audi A3/WhatsApp Image 2024-04-21 at 22.22.12_502a4ac3.jpg" alt="" height="200px" width="500px">
-        <img class="A" src="Audi A3/WhatsApp Image 2024-04-21 at 22.22.12_b0f4160c.jpg" alt="" height="200 px" width="500 px">
-        <hr>
-        <table>
-            <caption><h3>Audi A3 Specifications</h3</caption>
-            <tbody>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <script src="../main.js"></script>
+    <link rel="icon" href="../main_Photos/LOGO-ICON.ico">
+    <title>Audi A3</title>
+</head>
+
+<body class="body-AA">
+    <nav>
+        <a href="../index.html"><img src="../main_Photos/LOGO.png"></a>
+        <div class="search">
+            <button class="material-symbols-outlined" onclick="searchBrand()">search</button>
+            <input type="search" class="search-input" onchange="searchBrand()" id="searchInput" placeholder="search..."
+                autocomplete="off">
+        </div>
+        <a href="../index.html"><i class="bx bxs-home"></i>Home</a>
+        <a href="../Account/Profile.html" onclick="return CheckLoginin()"><i class='bx bxs-user'></i>Profile</a>
+        <a href="../index.html#service"><i class="bx bxs-cog"></i>Services</a>
+        <a href="../About Us Page/aboutus.html"><i class=" bx bxs-info-circle"></i>About</a>
+        <a href="../shop.html"><button class="addbutton"><i class="bx bx-cart-add"></i>Shop</button></a>
+    </nav>
+    <h1 class="AA">Audi A3 </h1>
+    <img class="A" src="Audi A3/2.jpg" alt="" height="200 px" width="500 px">
+    <img class="A" src="Audi A3/WhatsApp Image 2024-04-21 at 22.22.12_0d3d8317.jpg" alt="" height="200px"
+        width="500 px">
+    <img class="A" src="Audi A3/WhatsApp Image 2024-04-21 at 22.22.12_502a4ac3.jpg" alt="" height="200px" width="500px">
+    <img class="A" src="Audi A3/WhatsApp Image 2024-04-21 at 22.22.12_b0f4160c.jpg" alt="" height="200 px"
+        width="500 px">
+    <hr>
+    <table class="table-AA">
+        <caption>
+            <h3 class="h3-AA">Audi A3 Specifications</h3>
+        </caption>
+        <tbody>
             <tr id="a">
                 <th class="th">Model</th>
                 <td>2025</td>
@@ -74,20 +47,21 @@
                 <td class="td">1968</td>
             </tr>
             <tr id="c">
-                <th class="th" >Top Speed</th>
+                <th class="th">Top Speed</th>
                 <td class="td" id="ab"> 249 Km/h</td>
             </tr>
             <tr id="d">
-                <th  class="th">Origin</th>
+                <th class="th">Origin</th>
                 <td class="td">Germany</td>
             </tr>
             <tr id="e">
-            <th  class="th">Price</th>
-            <td class="td">45,000$</td>
+                <th class="th">Price</th>
+                <td class="td">45,000$</td>
             </tr>
-            </tbody>
-        </table>
-        <br>
-        <button onclick="buy()">Add to cart</button>
-    </body>
+        </tbody>
+    </table>
+    <br>
+    <button class="button-AA" onclick="buy()">Add to cart</button>
+</body>
+
 </html>

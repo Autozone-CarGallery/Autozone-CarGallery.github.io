@@ -1,102 +1,72 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    <script src="../../main.js"></script>
+    <link rel="icon" href="../../main_Photos/LOGO-ICON.ico">
+    <title>Audi Q3</title>
+
     <head>
-       
 
-        <title>Audi Q3</title>
-        <style>
-            h1{text-align: center; color: white;
-            text-shadow: 5px 2px black; 
-        font-size: 2 cm;}
-            body{background: url(1.jpg); background-repeat: no-repeat; background-size: cover;}
-            h3{color: white;
-            text-shadow:5px 2px black;}
-            table{
-                border-collapse: collapse;
-                margin: 25 px 0;
-                font-size: 0.9cm;
-                min-width: 2000 px;
-                text-align: center;
-                margin-left: auto;
-                margin-right: auto;
-                
-            }
-          tbody  tr#a{
-                background-color: hsl(168, 100%, 30%);
-                color: white;
-                background-size: cover;
-
-            }
-            table th.th{
-                padding:12px 15px;
-            }
-            content-table td.td{
-                padding: 12 px 15 px;
-            }
-            tbody tr#b{color: white;}
-            tbody tr#c{color: white; background-color:hsl(168, 100%, 30%) ;}
-            #ab{text-align: center;}
-            tr#d{color: white;}
-            tr#e{color: white; background-color: hsl(168, 100%, 30%);}
-            button{background-color:white;
-            position: ;}
-            img.A:hover{
-                border-radius: 8px;
-                transform: scale(1.1);
-            }
-            
-            video{
-        }
-            button{ background-color: brown;
-                margin-left: 720px;
-            } 
-            tr:hover{
-            transform: scale(1.1);
-        }
-        
-        </style>
-         <script>
-            function buy(){
-                alert("Audi Q3 is added to cart")
-            }
-        </script>
-    </head>
-    <body>
-        <h1>Audi Q3 </h1>
+    <body style="background: url(1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;">
+        <nav>
+            <a href="../../index.html"><img src="../../main_Photos/LOGO.png"></a>
+            <div class="search">
+                <button class="material-symbols-outlined" onclick="searchBrand()">search</button>
+                <input type="search" class="search-input" onchange="searchBrand()" id="searchInput"
+                    placeholder="search..." autocomplete="off">
+            </div>
+            <a href="../../index.html"><i class="bx bxs-home"></i>Home</a>
+            <a href="../../Account/Profile.html" onclick="return CheckLogininin()"><i
+                    class='bx bxs-user'></i>Profile</a>
+            <a href="../../index.html#service"><i class="bx bxs-cog"></i>Services</a>
+            <a href="../../About Us Page/aboutus.html"><i class=" bx bxs-info-circle"></i>About</a>
+            <a href="../../shop.html"><button class="addbutton"><i class="bx bx-cart-add"></i>Shop</button></a>
+        </nav>
+        <h1 class="AA">Audi Q3 </h1>
         <img class="A" src="IMG-20240422-WA0008.jpg" alt="" height="200 px"="500 px">
         <img class="A" src="IMG-20240422-WA0009.jpg" alt="" height="200px" width="350 px">
         <img class="A" src="IMG-20240422-WA0010.jpg" alt="" height="200px" width="400px">
         <img class="A" src="IMG-20240422-WA0006.jpg" alt="" height="200 px" width="400 px">
-        <img class="A" src="IMG-20240422-WA0007.jpg" alt=""" height="200px" width="350px">
+        <img class="A" src="IMG-20240422-WA0007.jpg" alt=""" height=" 200px" width="350px">
         <hr>
-            <video src="VID-20240422-WA0001.mp4" controls muted autoplay name="media" width="100%"></video>
+        <video src="VID-20240422-WA0001.mp4" controls muted autoplay name="media" width="100%"></video>
         <hr>
-        <table>
-            <caption><h3>Audi Q3 Specifications</h3</caption>
+        <table class="table-AA">
+            <caption>
+                <h3 class="h3-AA">Audi Q3 Specifications</h3>
+            </caption>
             <tbody>
-            <tr id="a">
-                <th class="th">Model</th>
-                <td class="td">2022</th>
-            </tr>
-            <tr id="b">
-                <th class="th">Engine</th>
-                <td class="td">1968 CC</td>
-            </tr>
-            <tr id="c">
-                <th class="th" >Top Speed</th>
-                <td class="td" id="ab"> 207 Km/h</td>
-            </tr>
-            <tr id="d">
-                <th  class="th">Origin</th>
-                <td class="td">Germany</td>
-            </tr>
-            <tr id="e">
-            <th  class="th">Price</th>
-            <td class="td">43,195$</td>
-            </tr>
+                <tr id="a">
+                    <th class="th">Model</th>
+                    <td class="td">2022</th>
+                </tr>
+                <tr id="b">
+                    <th class="th">Engine</th>
+                    <td class="td">1968 CC</td>
+                </tr>
+                <tr id="c">
+                    <th class="th">Top Speed</th>
+                    <td class="td" id="ab"> 207 Km/h</td>
+                </tr>
+                <tr id="d">
+                    <th class="th">Origin</th>
+                    <td class="td">Germany</td>
+                </tr>
+                <tr id="e">
+                    <th class="th">Price</th>
+                    <td class="td">43,195$</td>
+                </tr>
             </tbody>
         </table>
         <br>
-            <button onclick="buy()">Add to cart</button>
+        <button class="button-AA" onclick="buy()">Add to cart</button>
     </body>
+
 </html>
