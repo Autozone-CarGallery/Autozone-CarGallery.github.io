@@ -418,5 +418,4 @@ function toggleCarsSection() {
 
 //-------------------------------------------------------Samy part start here-----------------------------------------------------------------------------------------//
 function buy() {
-    alert("Audi A3 is added to cart")
-}
+    alert("The car has been added to you cart")}
